@@ -2,7 +2,6 @@ language: ruby
 
 script: true
 
-
 rvm:
   - "1.9.3"
   - "2.1.0"
