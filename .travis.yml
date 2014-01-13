@@ -1,6 +1,6 @@
 language: ruby
 
-script: ruby -v
+script: true
 
 rvm:
   - "1.9.3"
