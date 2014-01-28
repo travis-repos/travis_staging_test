@@ -1,9 +1,10 @@
-language: ruby
-
-script: ruby --version
-
-rvm:
-  - "1.9.3"
-  - "2.1.0"
-  - "2.0.0"
+language: python
+matrix:
+  include:
+    - python: 2.7
+      env: FOO=true BAR=False
+    - python: 2.7
+      env: FAZ=true BOO=False
+    - python: 2.6
+      env: FOZ=true BAO=False
 
