@@ -1,4 +1,4 @@
 language: python
 
 script: 
-  secure: "GdlXv7uo0xcEwUzDya+WyccyHXXgAGPF7CI/76WHMtQZo9DHp/e/quydaVoTxcISt3ib/NF+rFm6sGuVth5tB/ytuyJ/kgh0lthItCVtoLGJnABg6Iu05jeK3J7aHe2GJs9jVX3md+BAYaYBS9FcSmhZumLx9eomO6KOQ/Spi9M="
+  - secure: "GdlXv7uo0xcEwUzDya+WyccyHXXgAGPF7CI/76WHMtQZo9DHp/e/quydaVoTxcISt3ib/NF+rFm6sGuVth5tB/ytuyJ/kgh0lthItCVtoLGJnABg6Iu05jeK3J7aHe2GJs9jVX3md+BAYaYBS9FcSmhZumLx9eomO6KOQ/Spi9M="
