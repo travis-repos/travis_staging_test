@@ -2,8 +2,9 @@ language: python
 
 env:
   global:
-    - secure: "Yr2bolyYnDpsI6RMVEJNGdaFSRMjqiy5JB5CyiXK5va9sYNzGPMwFRKhFBkf6WrwpZZvJJ4YBouIxpXV86ymabEGIQ2B98Hb7bV0vfGMc1DQIc6ps2vioFIIFlncy6BH0uVqHInLbQEHYcq/qryuIq4K6Q9n1+Umw5X9mifQ3XE="
-    - secure: "Cbi8TpVyKEqk9So8XrohiEZezsdsj//MknIuo/4r7Mpl7xR7mfdYJigRYBI/DpiaqEXMBE0Ou/V+RGRe1RF5yOA8o+QShjXsLR4nWqvY+0e37VLebBV0foDUPFdXrerc2DstGD1nOVsnPXGH7nXpkePpZrzwYp8hrJAUDe6cHvs="
+    - secure: "NnnFb3e43XVnd/IoZ8allFeXn0B5h9q3Zyr4EuIhhs8A1cFtn1BB9Ieb+W2ReoP4j4B4NLv3XdlVGgUP4QkNATj3PoVVKcggThhnwfllYUWEvrvP3SHC3MJvK569iXY1Hg7zUwlyeQ5JldGLSDHwrRbdDT9pk7EXgenHPSDxvvM="    - secure: "Cbi8TpVyKEqk9So8XrohiEZezsdsj//MknIuo/4r7Mpl7xR7mfdYJigRYBI/DpiaqEXMBE0Ou/V+RGRe1RF5yOA8o+QShjXsLR4nWqvY+0e37VLebBV0foDUPFdXrerc2DstGD1nOVsnPXGH7nXpkePpZrzwYp8hrJAUDe6cHvs="
+
+install: true
 
 script: 
   - git clone https://$SECRET@github.com/$REPO.git
