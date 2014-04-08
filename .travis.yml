@@ -1,22 +1,12 @@
-language: ruby
+language: node_js
 
-
+os:
+  - osx
+  - linux
+  
 install: true
 
 script:
+  - node -v
   - true
-  - false
 
-env:
-  matrix:
-    - TARGET='-Ptest'
-    - TARGET='-Prake -Dtask=test:extended'
-    - TARGET='-Prake -Dtask=spec:ci_interpreted_travis'
-    - TARGET='-Prake -Dtask=spec:ci_interpreted_ir_travis'
-    - TARGET='-Prake -Dtask=spec:ir'
-    - TARGET='-Ptruffle'
-
-matrix:
-  allow_failures:
-    - env: TARGET='-Prake -Dtask=spec:ci_interpreted_ir_travis'
-    - env: TARGET='-Prake -Dtask=spec:ci_interpreted_travis'
