@@ -7,9 +7,10 @@ script:
   - true
 
 notifications:
-  channels:
-    - "irc.foobar.foo#nothere"
-    - "chat.freenode.net#travisstaging"
-  on_success: always
-  on_failure: always
-  template: "%{repository}#%{build_number} (%{duration}) (%{branch} - %{commit} : %{author}): %{message}"
+  irc:
+    channels:
+      - "irc.foobar.foo#nothere"
+      - "chat.freenode.net#travisstaging"
+    on_success: always
+    on_failure: always
+    template: "%{repository}#%{build_number} (%{duration}) (%{branch} - %{commit} : %{author}): %{message}"
