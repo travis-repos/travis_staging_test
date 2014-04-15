@@ -4,12 +4,12 @@ language: ruby
 install: true
 
 script:
+  - sleep 60
   - true
 
 notifications:
   irc:
     channels:
-      - "irc.foobar.foo#nothere"
       - "chat.freenode.net#travisstaging"
     on_success: always
     on_failure: always
