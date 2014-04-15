@@ -1,9 +1,7 @@
-language: python
+language: ruby
 
-python: '2.7'
-
-install: pip install gevent
+services:
+  - riak
 
 script:
-  - 'find ~/virtualenv -name core.so -exec nm {} \; | grep PyUnicodeUCS4_DecodeUTF8'
   - true
