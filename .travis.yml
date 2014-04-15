@@ -1,12 +1,13 @@
-language: node_js
+language: ruby
 
-os:
-  - osx
-  - linux
-  
+
 install: true
 
 script:
-  - node -v
   - true
 
+notifications:
+  channels:
+    - "irc.foobar.foo#nothere"
+  on_success: always
+  on_failure: always
