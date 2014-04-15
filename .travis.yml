@@ -4,7 +4,7 @@ services:
   - riak
 
 before_install:
-  - sudo service start riak
+  - sudo service riak start
 
 script:
   - true
