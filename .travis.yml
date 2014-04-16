@@ -1,10 +1,11 @@
 language: ruby
 
-services:
-  - riak
-
-before_install:
-  - sudo service riak start
+notifications:
+  irc:
+    channels:
+      - "irc.paraphysics.net#znc"
+    on_success: always
+    on_failure: always
 
 script:
   - true
