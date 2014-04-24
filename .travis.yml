@@ -1,14 +1,22 @@
 language: ruby
 
-before_install:
-  - false
+rvm:
+  - 1.9.3
+  - 2.0.0
 
-notifications:
-  irc:
-    channels:
-      - "irc.paraphysics.net#znc"
-    on_success: always
-    on_failure: always
+os:
+  - linux
+  - osx
 
 script:
   - true
+
+deploy:
+  provider: rubygems
+  api_key:
+    secure: foobar
+  gem: beeeeeeeeeeeeeeeeeeeeeeeeeeeeeer
+  on:
+    repo: travis-ci/travis.rb
+    ruby: 2.0.0
+    condition: "$(uname) = Darwin"
