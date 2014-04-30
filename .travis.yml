@@ -1,23 +1,11 @@
 language: ruby
 
 rvm:
-  - 1.9.3
-  - 2.0.0
-
-os:
-  - linux
-  - osx
-
-script:
+  - 2.1.0
+  
+install:
   - true
 
-deploy:
-  provider: rubygems
-  api_key:
-    secure: foobar
-  gem: beeeeeeeeeeeeeeeeeeeeeeeeeeeeeer
-  on:
-    repo: travis-ci/travis.rb
-    ruby: 2.0.0
-    condition: "$(uname) = Darwin"
+script:
+  - echo -ne "\033[34;4munderlined\033[0m; not underlined"
 
