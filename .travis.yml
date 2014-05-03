@@ -8,4 +8,3 @@ install:
 
 script:
   - echo -ne "\033[34;4munderlined\033[0m; not underlined"
-
