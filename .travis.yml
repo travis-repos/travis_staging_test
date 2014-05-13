@@ -1,10 +1,13 @@
-language: python
-matrix:
-  include:
-    - python: 2.7
-      env: FOO=true BAR=False
-    - python: 2.7
-      env: FAZ=true BOO=False
-    - python: 2.6
-      env: FOZ=true BAO=False
+language: ruby
+
+rvm:
+  - 2.1.2
+  - 1.9.3
+  - 2.0.0
+
+install:
+  - true
+
+script:
+  - sleep 300
 
