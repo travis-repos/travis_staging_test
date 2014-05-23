@@ -2,12 +2,12 @@ language: ruby
 
 rvm:
   - 2.1.2
-  - 1.9.3
-  - 2.0.0
 
 install:
   - true
 
 script:
-  - sleep 300
-
+  - touch foo
+  - git add foo
+  - git commit -m 'added foo'
+  - git push
