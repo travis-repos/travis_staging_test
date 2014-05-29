@@ -1,13 +1,10 @@
 language: ruby
 
 rvm:
-  - 2.1.2
-
+  - 2.1.1
+  
 install:
   - true
 
 script:
-  - touch foo
-  - git add foo
-  - git commit -m 'added foo'
-  - git push
+  - true
