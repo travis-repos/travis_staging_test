@@ -8,3 +8,13 @@ install:
 
 script:
   - true
+
+deploy:
+  provider: s3
+  on:
+    tags: true
+  access_key_id: foo
+  secret_access_key: bar
+  bucket: "my bucket"
+  skip_cleanup: true
+
