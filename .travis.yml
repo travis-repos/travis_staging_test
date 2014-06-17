@@ -2,7 +2,7 @@ language: ruby
 
 rvm:
   - 2.1.1
-  
+
 install:
   - mkdir stuff
   - touch stuff/foo
@@ -14,8 +14,10 @@ deploy:
   provider: s3
   on:
     tags: true
-  access_key_id: foo
-  secret_access_key: bar
-  bucket: "my bucket"
+  access_key_id:
+    secure: "Jcj/BZgR2OmFRXX+vqtNBaiiHO1xuz/lISYNzWz/b6y4AgFLlYyU7pgyuXz0SEdYCojnKfRExhBhM6LlXCh1ntwjXaZ7qaaaA93Jt6mSwZlEzX0WdeBBZgCfiGM3qxl+2nAMR3iGNcpNsymAoJ2wJY/IWkwWvg8J1KqZ+Y3SFuk="
+  secret_access_key:
+    secure: "GYhdV7ptCKPvOUzJ4BDAqgr9+GDf8ofagsIWVBrs3o2RcWvvOAZhXOO4uvf3YhFneWcMNB/zjA8AsKQEEVL859RkQgu8NyPYr7z5pAmXCXKuiA0e/aQ3XyMkrTYhXuBlUpSST7DjzKKUIxKAtE+Khd/TS+AmARDi/gN9Kg7khSs="
+  bucket: banzaiman_travis_artifacts
   skip_cleanup: true
   local-dir: stuff
