@@ -9,6 +9,7 @@ install:
 
 script:
   - echo $TRAVIS_TAG
+  - echo $TRAVIS_BRANCH
 
 deploy:
   provider: s3
