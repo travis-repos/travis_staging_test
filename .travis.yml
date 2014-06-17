@@ -8,7 +8,7 @@ install:
   - touch stuff/foo
 
 script:
-  - true
+  - echo $TRAVIS_TAG
 
 deploy:
   provider: s3
