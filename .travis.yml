@@ -4,7 +4,8 @@ rvm:
   - 2.1.1
   
 install:
-  - true
+  - mkdir stuff
+  - touch stuff/foo
 
 script:
   - true
@@ -17,3 +18,4 @@ deploy:
   secret_access_key: bar
   bucket: "my bucket"
   skip_cleanup: true
+  local-dir: stuff
