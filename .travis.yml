@@ -17,5 +17,3 @@ deploy:
   secret_access_key: bar
   bucket: "my bucket"
   skip_cleanup: true
-
-
