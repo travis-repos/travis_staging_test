@@ -1,7 +1,16 @@
 language: ruby
 
 rvm:
-  - 2.1.1
+  - 1.9.3
+  - 2.1.0
+  - 2.1.2
+
+env:
+  - FOO=BAR
+  - BAR=BAZ
+  - BAZ=FOO
+  - FOO=1
+  - FOO=2
 
 install:
   - true
