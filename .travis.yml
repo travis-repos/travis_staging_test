@@ -23,4 +23,3 @@ deploy:
     app_name: "foo"
     application_id: "bar"
     license_key: "baz"
-
