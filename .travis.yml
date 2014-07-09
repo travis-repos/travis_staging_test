@@ -4,6 +4,7 @@ install:
   - mkdir foo
 
 script:
+  - sleep 5
   - true
 
 deploy:
