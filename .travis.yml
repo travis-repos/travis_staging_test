@@ -1,25 +1,19 @@
-language: ruby
+language: python
+
+sudo: false
 
 install:
-  - mkdir foo
-
+  - true
+  
 script:
-  - sleep 2
   - true
 
 deploy:
   provider: s3
-  access_key_id:
-    secure: "dHP944VVE5w57ntlrQD1S8KqB08aE9d1JH+MWTrCI9Z4NLExXfbc3E/eL1BJ2Ojhnd2V+vpVAVlbhHq96V2NqsZcZM8p0ZVI1F38aj2S5X7s0PKgc2tAvWv/uDTJpPPxINaSTjpOtwPxjW8EEUwedHifsBzPREutaSVvBJjpxQ4="
-  secret_access_key:
-    secure: "Loel864GZtTfyTOW96MWAr3RNh3ILemeqswcpuTJNr/TOtYaM0/tEhwzYWwKZXQibiVX3G0NyRyEJjYhAT2qJrmu8kOwXAOSadHERwBLiOsrBm+xpGldARxDN8v5ejtodY6D9cPJImTwlR1uoJnEF45rhO1e0J5QwyS2J7YL1is="
-  bucket: banzaiman_travis_artifacts
-  skip_cleanup: true
-  local-dir: foo
+  access_key_id: "YOUR AWS ACCESS KEY"
+  secret_access_key: "YOUR AWS SECRET KEY"
+  bucket: "S3 Bucket"
   on:
-    all_branches: true
-    condition: $FOO = 'bar'
-  notify:
-    app_name: "foo"
-    application_id: "bar"
-    license_key: "baz"
+    condition:
+      - 'FOO = bar'
+      - 'BAR = baz'
