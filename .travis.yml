@@ -2,6 +2,9 @@ language: python
 
 sudo: false
 
+env:
+  - FOO=bar BAR=baz
+
 install:
   - true
   
