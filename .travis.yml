@@ -1,9 +1,8 @@
 language: python
 
-sudo: false
-
-env:
-  - FOO=bar BAR=baz
+python:
+  - pypy3
+  - "2.7"
 
 install:
   - true
