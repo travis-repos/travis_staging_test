@@ -1,11 +1,12 @@
-language: python
-
-python:
-  - pypy3
-  - "2.7"
+language: go
 
 install:
-  - true
-  
+  - uname -a
+  - lsb_release -a
+
+group: update
+
+dist: trusty
+
 script:
   - true
