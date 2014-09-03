@@ -1,12 +1,15 @@
-language: node_js
+language: perl
+
+perl:
+  - "5.20-extras"
+  - 5.20
 
 install:
-  - echo "hello"
   - uname -a
   - lsb_release -a
-  - gcc --version
 
 group: update
 
 script:
-  - true
+  - perl -V
+  - perlbrew list
