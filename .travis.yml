@@ -1,6 +1,7 @@
 language: node_js
 
 install:
+  - echo "hello"
   - uname -a
   - lsb_release -a
   - gcc --version
