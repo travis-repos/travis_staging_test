@@ -1,9 +1,10 @@
-language: go
+language: node_js
 
 install:
   - uname -a
   - lsb_release -a
 
+dist: trusty
 
 group: update
 
