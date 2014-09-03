@@ -6,7 +6,7 @@ install:
   - lsb_release -a
   - gcc --version
 
-dist: trusty
+group: update
 
 script:
   - true
