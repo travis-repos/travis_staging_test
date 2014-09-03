@@ -7,7 +7,5 @@ install:
 
 group: update
 
-dist: trusty
-
 script:
   - true
