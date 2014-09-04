@@ -1,15 +1,7 @@
 language: perl
 
-perl:
-  - "5.20-extras"
-  - 5.20
+sudo: false
 
-install:
-  - uname -a
-  - lsb_release -a
+install: true
 
-group: update
-
-script:
-  - perl -V
-  - perlbrew list
+script: true
