@@ -1,7 +1,5 @@
 language: c
 
-services:
-  - couchdb
 
 install: true
 
