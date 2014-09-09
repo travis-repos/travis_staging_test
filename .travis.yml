@@ -1,8 +1,10 @@
 language: c
 
-sudo: false
+services:
+  - couchdb
 
 install: true
 
 script:
-  - echo "hello"
+  - ps -ef | grep couch
+  - couchdb -V | grep couch
