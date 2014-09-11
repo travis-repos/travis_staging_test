@@ -1,11 +1,16 @@
-language: c
+language: ruby
+
+rvm:
+  - 1.9.3
+  - 2.1.2
+  - jruby
 
 dist: trusty
 
-sudo: false
+group: update
 
 install: true
 
 script:
-  - ps -ef | grep couch
-  - couchdb -V | grep couch
+  - lsb_release -a
+  - gcc --version
