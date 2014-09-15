@@ -7,8 +7,6 @@ rvm:
 
 dist: trusty
 
-group: update
-
 install: true
 
 script:
