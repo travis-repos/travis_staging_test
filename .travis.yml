@@ -6,8 +6,6 @@ rvm:
   - 2.2.0-preview1
   - jruby
 
-dist: trusty
-
 group: update
 
 install: true
