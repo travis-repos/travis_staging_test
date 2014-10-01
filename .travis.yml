@@ -1,11 +1,12 @@
 language: ruby
 
+addons:
+  postgresql: "9.3"
+
 rvm:
   - 2.1
-
-group: update
 
 install: true
 
 script:
-  - rvm list
+  - ps -ef | grep -v grep | grep postgres
