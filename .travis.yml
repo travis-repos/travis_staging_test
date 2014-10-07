@@ -3,5 +3,5 @@ language: go
 install: true
 
 script:
-  - travis_assert true
+  - travis_assert 5
   - travis_retry false
