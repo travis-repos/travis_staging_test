@@ -1,7 +1,7 @@
 language: ruby
 
 addons:
-  mariadb: "10.0"
+  mariadb: "5.5"
 
 install: true
 
