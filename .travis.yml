@@ -7,4 +7,4 @@ install: true
 
 script:
   - mysql -e "SELECT VERSION(); SELECT NOW()"
-  - mysql -e "CREATE TABLE FOO(C1 VARCHAR(25))"
+  - mysql -e "CREATE TABLE FOO(C1 VARCHAR(25))" travis
