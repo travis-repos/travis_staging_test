@@ -1,7 +1,9 @@
-language: go
+language: ruby
+
+addons:
+  mariadb: "10.0"
 
 install: true
 
 script:
-  - travis_assert 5
-  - travis_retry false
+  - ps -ef
