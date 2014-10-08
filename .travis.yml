@@ -10,8 +10,7 @@ before_install:
   - export PATH=$TRAVIS_BUILD_DIR/node_modules/.bin:$PATH
  
 install:
-  - npm install
-  - bower install
+  - true
  
 script:
   - true
