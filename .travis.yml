@@ -6,5 +6,4 @@ addons:
 install: true
 
 script:
-  - mysql -e "SELECT VERSION(); SELECT NOW()"
-  - mysql -e "CREATE TABLE FOO(C1 VARCHAR(25))" travis
+  - mysql -u root -e "SELECT VERSION(); SELECT NOW()"
