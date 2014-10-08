@@ -1,10 +1,17 @@
-language: ruby
-
-addons:
-  mariadb: "5.5"
-
-install: true
-
+language: objective-c
+ 
+cache:
+  bundler: false
+  directories:
+    - node_modules
+    - bower_components
+ 
+before_install:
+  - export PATH=$TRAVIS_BUILD_DIR/node_modules/.bin:$PATH
+ 
+install:
+  - npm install
+  - bower install
+ 
 script:
-  - mysql -u root -e "SELECT VERSION(); SELECT NOW()"
-  - mysql -u root -e "CREATE USER 'travis'@'%' IDENTIFIED BY '';          GRANT ALL PRIVILEGES ON *.* TO 'travis'@'%'; CREATE USER 'travis'@'localhost' IDENTIFIED BY '';  GRANT ALL PRIVILEGES ON *.* TO 'travis'@'localhost'; CREATE USER 'travis'@'127.0.0.1' IDENTIFIED BY '';  GRANT ALL PRIVILEGES ON *.* TO 'travis'@'127.0.0.1';"
+  - true
