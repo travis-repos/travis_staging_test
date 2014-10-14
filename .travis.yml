@@ -1,16 +1,8 @@
 language: ruby
- 
-cache:
-  bundler: false
-  directories:
-    - node_modules
-    - bower_components
- 
-before_install:
-  - export PATH=$TRAVIS_BUILD_DIR/node_modules/.bin:$PATH
- 
+
+
 install:
-  - true
+  - ps -ef|grep -i couch
  
 script:
   - true
