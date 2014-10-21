@@ -1,12 +1,10 @@
-language: node_js
+language: ruby
 
-# node_js:
-#   - "0.11"
-#   - "0.10"
-#   - "0.8"
-env:
-  - JAVA_VERSION=oraclejdk8
-  - JAVA_VERSION=oraclejdk7
-  - JAVA_VERSION=openjdk6
 before_install:
-  - jdk_switcher $JAVA_VERSION
+  - echo $TRAVIS_SECURE_ENV_VARS
+
+install:
+  - true
+  
+script:
+  - true
