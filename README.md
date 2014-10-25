@@ -9,4 +9,5 @@ Deleted `travis-repos/travis_staging_test` from the db. Transfered it to `svenfu
 Synced `svenfuchs` and activated the repo. Processed as usual.
 
 Transfered back to `travis-repos`. Updated the owner as expected.
-Transfered back to `svenfuchs`.
+Transfered back to `svenfuchs`. Updated the owner as expected.
+Transfered back to `travis-repos`.
