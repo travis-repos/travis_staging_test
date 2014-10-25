@@ -6,4 +6,6 @@ This was a fork on svenfuchs. Now transfered to travis-repos. Now transfered bac
 
 Deleted `travis-repos/travis_staging_test` from the db. Transfered it to `svenfuchs`. Logged the expected error message (repo not found).
 
-Synced `svenfuchs` and activated the repo.
+Synced `svenfuchs` and activated the repo. Processed as usual.
+
+Transfered back to `travis-repos/travis_staging_test`
