@@ -3,19 +3,6 @@ language: ruby
 rvm:
    - 2.1.3
 
-matrix:
-   include:
-    - os: linux
-      compiler: gcc
-      env: JULIAVERSION="juliareleases"
-    - os: linux
-      compiler: gcc
-      env: JULIAVERSION="julianightlies"
-    - os: osx
-      compiler: gcc
-      env: JULIAVERSION="juliareleases"
-    - os: osx
-      compiler: gcc
-      env: JULIAVERSION="julianightlies"
+
 script: true
 
