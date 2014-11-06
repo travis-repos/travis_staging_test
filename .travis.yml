@@ -1,6 +1,7 @@
-language: ruby
+language: php
 
+php: hhvm
 
-script: true
+script: cat /etc/hhvm/php.ini
 
 install: true
