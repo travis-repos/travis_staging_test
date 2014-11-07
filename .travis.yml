@@ -1,6 +1,8 @@
 language: php
 
-php: hhvm
+php:
+  - hhvm
+  - hhvm-nightly
 
 script: cat /etc/hhvm/php.ini
 
