@@ -5,6 +5,7 @@ addons:
 
 before_install:
   - echo $HOME
+  - echo $PATH
 
 install: true
 
