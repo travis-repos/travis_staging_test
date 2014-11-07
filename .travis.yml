@@ -1,9 +1,9 @@
-language: php
+language: ruby
 
-php:
-  - hhvm
-  - hhvm-nightly
-
-script: cat /etc/hhvm/php.ini
+addons:
+  firefox: 29.0
 
 install: true
+
+script: 
+  - firefox --version
