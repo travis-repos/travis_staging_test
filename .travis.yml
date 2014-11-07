@@ -7,8 +7,5 @@ addons:
 
 install: true
 
-
 script:
-  - which firefox
-  - echo $PATH
   - firefox --version
