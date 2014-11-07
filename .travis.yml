@@ -3,10 +3,6 @@ language: ruby
 addons:
   firefox: 29.0
 
-before_install:
-  - echo $HOME
-  - echo $PATH
-
 install: true
 
 script:
