@@ -3,8 +3,10 @@ language: ruby
 addons:
   firefox: 29.0
 
+before_install:
+  - echo $HOME
 
 install: true
 
-script: 
+script:
   - firefox --version
