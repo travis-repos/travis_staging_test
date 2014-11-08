@@ -3,6 +3,9 @@ sudo: false
 cache: bundler
 
 script: true
+after_script: 
+  - cat $HOME/.casher/fetch.log 
+  - cat $HOME/.casher/fetch.err.log
 
 # language: cpp
 # matrix:
