@@ -1,6 +1,8 @@
 sudo: false
 
-cache: bundler
+cache: 
+  bundler: true
+  edge: true
 
 script: true
 after_script: 
