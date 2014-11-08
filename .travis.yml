@@ -1,4 +1,7 @@
 sudo: false
+
+cache: bundler
+
 script: true
 
 # language: cpp
