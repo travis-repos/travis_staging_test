@@ -4,4 +4,4 @@ group: dev
 
 install: true
 
-script: true
+script: cat /usr/local/system_info/system_info.log || true
