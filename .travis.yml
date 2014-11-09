@@ -2,10 +2,6 @@ language: ruby
 
 sudo: false
 
-addons:
-  firefox: 29.0
-
 install: true
 
-script:
-  - firefox --version
+script: true
