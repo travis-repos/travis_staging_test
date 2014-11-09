@@ -2,8 +2,6 @@ language: go
 
 group: dev
 
-sudo: false
-
 install: true
 
 script: true
