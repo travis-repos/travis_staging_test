@@ -1,4 +1,6 @@
-language: ruby
+language: go
+
+group: dev
 
 sudo: false
 
