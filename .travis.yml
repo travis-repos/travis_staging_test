@@ -1,7 +1,12 @@
 language: go
 
+rvm:
+  - 2.1
+
+dist: trusty
+
 group: dev
 
 install: true
 
-script: cat /usr/local/system_info/system_info.log || true
+script: rvm list
