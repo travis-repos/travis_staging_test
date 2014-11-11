@@ -16,12 +16,12 @@ matrix:
     - secure: "IshpiVH3tde4rqfpQA4zO0xe6RMekjabSJYcT8KxD5+kVvL7WMwpKRwoNf7akeAE7o572qkbcCkMFLaQKQm9Ij+Y02sh2gyuuepLfhEO4APN7426tcejd5RxFrma4VP0cBNtiYkVYe9vZZWkHHHkztrpp2LB0n5eg54u1vvib1Q="
 
 script:
-  - echo "global_env: FOO=$FOO"
-  - echo "global_env: SECURE_FOO=$SECURE_FOO"
-  - echo "global_env: BAR=$BAR"
-  - echo "global_env: SECURE_BAR=$SECURE_BAR"
-  - echo "global_env: BAZ=$BAZ"
-  - echo "global_env: SECURE_BAZ=$SECURE_BAZ"
+  - 'echo "global_env: FOO=$FOO"'
+  - 'echo "global_env: SECURE_FOO=$SECURE_FOO"'
+  - 'echo "global_env: BAR=$BAR"'
+  - 'echo "global_env: SECURE_BAR=$SECURE_BAR"'
+  - 'echo "global_env: BAZ=$BAZ"'
+  - 'echo "global_env: SECURE_BAZ=$SECURE_BAZ"'
   
 after_script: 
   - cat $HOME/.casher/fetch.log 
