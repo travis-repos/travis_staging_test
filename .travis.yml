@@ -1,6 +1,4 @@
-# sudo: false
-
-language: objective-c
+sudo: false
 
 cache: 
   bundler: true
@@ -9,7 +7,22 @@ cache:
 services:
   - redis
 
-script: true
+matrix:
+  global_env:
+    - FOO=foo
+    - secure: "gXGxIO//Ed07PIuiWafwlaM1D7B4fcUZMSpIDVqDvZWtErND636ONu2IVurx2ikp9Pqnsc7flsVz4Ym5tLrwELhvaybPYovdKlyAOXKjD0AKCrodpKJ2+lYa8cR2/LrrXngBVYLK55zSdbyEX+hUfBGtvUyaz9FRa10OFku70u4="
+  env:
+    - BAR=bar
+    - secure: "IshpiVH3tde4rqfpQA4zO0xe6RMekjabSJYcT8KxD5+kVvL7WMwpKRwoNf7akeAE7o572qkbcCkMFLaQKQm9Ij+Y02sh2gyuuepLfhEO4APN7426tcejd5RxFrma4VP0cBNtiYkVYe9vZZWkHHHkztrpp2LB0n5eg54u1vvib1Q="
+
+script:
+  - echo "global_env: FOO=$FOO"
+  - echo "global_env: SECURE_FOO=$SECURE_FOO"
+  - echo "global_env: BAR=$BAR"
+  - echo "global_env: SECURE_BAR=$SECURE_BAR"
+  - echo "global_env: BAZ=$BAZ"
+  - echo "global_env: SECURE_BAZ=$SECURE_BAZ"
+  
 after_script: 
   - cat $HOME/.casher/fetch.log 
   - cat $HOME/.casher/fetch.err.log
@@ -29,4 +42,3 @@ after_script:
 #     - os: osx
 #       compiler: gcc
 #       env: JULIAVERSION="julianightlies"
-#         
