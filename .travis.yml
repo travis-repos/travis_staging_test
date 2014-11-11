@@ -7,11 +7,11 @@ cache:
 services:
   - redis
 
-matrix:
-  global_env:
+env:
+  global:
     - FOO=foo
     - secure: "gXGxIO//Ed07PIuiWafwlaM1D7B4fcUZMSpIDVqDvZWtErND636ONu2IVurx2ikp9Pqnsc7flsVz4Ym5tLrwELhvaybPYovdKlyAOXKjD0AKCrodpKJ2+lYa8cR2/LrrXngBVYLK55zSdbyEX+hUfBGtvUyaz9FRa10OFku70u4="
-  env:
+  matrix:
     - BAR=bar
     - secure: "IshpiVH3tde4rqfpQA4zO0xe6RMekjabSJYcT8KxD5+kVvL7WMwpKRwoNf7akeAE7o572qkbcCkMFLaQKQm9Ij+Y02sh2gyuuepLfhEO4APN7426tcejd5RxFrma4VP0cBNtiYkVYe9vZZWkHHHkztrpp2LB0n5eg54u1vvib1Q="
 
