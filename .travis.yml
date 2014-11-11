@@ -10,10 +10,10 @@ services:
 env:
   global:
     - FOO=foo
-    secure: "O5fJhyTAuCq8GYwFaXxZ+MFEb86ONsj9jWxz6/GQoCEIb3z6Ie6Kfzqb001JWsqOPQ8Wyn4EMtDlAY/7nzWW978fWOUEyag+zMDzQwCd1Mk2TA2PK7jNTDTw8OcTOHCkcMnQTJU3JebcLVpRIFnctx9jVJHbNCpe6kVsyl21Igg="
+    - secure: "O5fJhyTAuCq8GYwFaXxZ+MFEb86ONsj9jWxz6/GQoCEIb3z6Ie6Kfzqb001JWsqOPQ8Wyn4EMtDlAY/7nzWW978fWOUEyag+zMDzQwCd1Mk2TA2PK7jNTDTw8OcTOHCkcMnQTJU3JebcLVpRIFnctx9jVJHbNCpe6kVsyl21Igg="
   matrix:
     - BAR=bar
-    secure: "fIRtWVB5Xv5XwYepUCI56a5s4qt71QZEjxiRArzqJ3JsqBTZHI/EIxWXXojOYf6NLLA+yE+7wcUI68gqaLoHgTIuXdwn2mRFrCjlD0+aUpxmrruF7hIGy6ntE5KHxNY+VWKvxaS9qPALZidLlFj5lGKccHQngTckG1r0Gsj0kDA="
+    - secure: "fIRtWVB5Xv5XwYepUCI56a5s4qt71QZEjxiRArzqJ3JsqBTZHI/EIxWXXojOYf6NLLA+yE+7wcUI68gqaLoHgTIuXdwn2mRFrCjlD0+aUpxmrruF7hIGy6ntE5KHxNY+VWKvxaS9qPALZidLlFj5lGKccHQngTckG1r0Gsj0kDA="
 
 script:
   - env
