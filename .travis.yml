@@ -1,5 +1,7 @@
 sudo: false
 
+language: objective_c
+
 cache: 
   bundler: true
   edge: true
