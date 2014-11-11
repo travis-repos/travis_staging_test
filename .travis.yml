@@ -1,6 +1,6 @@
 # sudo: false
 
-language: objective_c
+language: objective-c
 
 cache: 
   bundler: true
