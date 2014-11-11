@@ -4,6 +4,9 @@ cache:
   bundler: true
   edge: true
 
+services:
+  - redis
+
 script: true
 after_script: 
   - cat $HOME/.casher/fetch.log 
