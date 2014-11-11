@@ -16,12 +16,7 @@ env:
     - secure: "IshpiVH3tde4rqfpQA4zO0xe6RMekjabSJYcT8KxD5+kVvL7WMwpKRwoNf7akeAE7o572qkbcCkMFLaQKQm9Ij+Y02sh2gyuuepLfhEO4APN7426tcejd5RxFrma4VP0cBNtiYkVYe9vZZWkHHHkztrpp2LB0n5eg54u1vvib1Q="
 
 script:
-  - 'echo "global_env: FOO=$FOO"'
-  - 'echo "global_env: SECURE_FOO=$SECURE_FOO"'
-  - 'echo "env: BAR=$BAR"'
-  - 'echo "env: SECURE_BAR=$SECURE_BAR"'
-  - 'echo "settings: BAZ=$BAZ"'
-  - 'echo "settings: SECURE_BAZ=$SECURE_BAZ"'
+  - env
   
 after_script: 
   - cat $HOME/.casher/fetch.log 
