@@ -11,8 +11,8 @@ script: true
 
 rvm: default
 
-git:
-  strategy: tarball
+# git:
+#   strategy: tarball
 
 # env:
 #   global:
