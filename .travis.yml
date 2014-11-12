@@ -11,4 +11,5 @@ before_install:
 script:
   - #
   - #
+  - true
   - lsb_release -a
