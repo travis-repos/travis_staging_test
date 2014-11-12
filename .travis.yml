@@ -17,3 +17,4 @@ install: true
 script:
   - rvm list
   - lsb_release -a
+  - firefox --version
