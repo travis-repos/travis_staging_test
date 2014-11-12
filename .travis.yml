@@ -1,5 +1,10 @@
 language: ruby
 
+sudo: false
+
+addons:
+  firefox: 29.0
+
 rvm:
   - 2.1
 
@@ -9,4 +14,6 @@ group: dev
 
 install: true
 
-script: rvm list
+script:
+  - rvm list
+  - lsb_release -a
