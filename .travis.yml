@@ -9,6 +9,8 @@ services:
 
 script: true
 
+rvm: ruby-head
+
 git:
   strategy: tarball
 
