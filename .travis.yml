@@ -5,6 +5,10 @@ addons:
 
 install: true
 
+group: dev
+
+dist: trusty
+
 before_install:
   - #
 
