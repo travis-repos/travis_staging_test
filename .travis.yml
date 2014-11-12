@@ -7,10 +7,6 @@ php:
   - hhvm
   - hhvm-nightly
 
-dist: trusty
-
-group: dev
-
 install: true
 
 script:
