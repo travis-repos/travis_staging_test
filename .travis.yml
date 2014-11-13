@@ -1,19 +1,13 @@
 language: ruby
-
 addons:
   firefox: 29.0
-
 install: true
-
-group: dev
-
-dist: trusty
-
-before_install:
-  - #
-
 script:
-  - #
-  - #
-  - true
-  - lsb_release -a
+- true
+- lsb_release -a
+notifications:
+  hipchat:
+    rooms:
+      secure: TSNL5oir7wlB2zCHxUzxGtdRZfWroE1TImL89yxqJEwcOAM3+8+azHXC3A5+kOmE/zGqq6TMToH9cIME19VCK4oAl4MX8n2IUV3USpYKiP8bmjqGH6u2881p/sCpP9KMeDjehDcwGcoAEc7j4OtXROyibhhc4uDBNORjZyHaKZE=
+    server:
+      secure: cqO8idvjt6RPwuNhKsd3mg99KOQ30YvisucL2+aXm9iSjcr9Y88V5bwTEthgFnxFui98VWGsp5n3BDKYqqSN9Zd5yQm50Ol76XdIvCUjjZgyTGikga69DeyD6/OPLebKabrLt8o/PaqwK07IwfQ6uj+jy0Qee6DAS6P4LeMP7yo=
