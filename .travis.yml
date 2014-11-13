@@ -1,5 +1,9 @@
 language: ruby
 
+dist: trusty
+
+group: dev
+
 addons:
   firefox: "29.0"
 
