@@ -1,14 +1,13 @@
 language: ruby
 
-dist: trusty
-
-group: dev
+sudo: false
 
 addons:
   firefox: "29.0"
 
 install:
-  - pwd
+  - echo $PATH
+  - which firefox
 
 script: 
   - firefox --version
