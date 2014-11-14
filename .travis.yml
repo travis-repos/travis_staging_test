@@ -2,12 +2,9 @@ language: ruby
 
 sudo: false
 
-addons:
-  firefox: "29.0"
-
 install:
-  - echo $PATH
-  - which firefox
+  - true
 
 script: 
-  - firefox --version
+  - dpkg --list | awk '/netcat/ {print $2}' | xargs dpkg-query -L
+  - which nc | true
