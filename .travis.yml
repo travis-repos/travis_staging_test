@@ -2,9 +2,13 @@ language: ruby
 
 sudo: false
 
+addons:
+  firefox: "30.0"
+
 install:
   - true
 
 script: 
-  - dpkg --list | awk '/netcat/ {print $2}' | xargs dpkg-query -L
-  - which nc | true
+  - which firefox
+  - echo $PATH
+  - firefox --version
