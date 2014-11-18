@@ -12,8 +12,9 @@ services:
 
 script: true
 
-hipchat:
-  secure: QdY+hOyUbe3zU/BuEkgWghVniNmCF14ieEfFAKpnWVplkfGZ7o+SZTJ9erl+zPu6FRN160GLaKVJHwf1xDWaVDkF4RLN9NgEfY4ULXTBCCJ0CDxo1ikcRU5+6hgYDCr+yK3LmapIe1FhuEz1J8/m5no4NWwKF0V6J9oQ9U2mcQU=
+hipchat: "a21b28b2863acbee3ccb17da36a173@Travis CI"
+# hipchat: 
+#   secure: QdY+hOyUbe3zU/BuEkgWghVniNmCF14ieEfFAKpnWVplkfGZ7o+SZTJ9erl+zPu6FRN160GLaKVJHwf1xDWaVDkF4RLN9NgEfY4ULXTBCCJ0CDxo1ikcRU5+6hgYDCr+yK3LmapIe1FhuEz1J8/m5no4NWwKF0V6J9oQ9U2mcQU=
 
 # rvm: default
 
