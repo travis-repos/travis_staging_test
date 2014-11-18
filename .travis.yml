@@ -3,7 +3,7 @@ sudo: false
 group: dev
 dist: trusty
 
-cache: 
+cache:
   bundler: true
   edge: true
 
@@ -11,6 +11,9 @@ services:
   - redis
 
 script: true
+
+hipchat:
+  secure: QdY+hOyUbe3zU/BuEkgWghVniNmCF14ieEfFAKpnWVplkfGZ7o+SZTJ9erl+zPu6FRN160GLaKVJHwf1xDWaVDkF4RLN9NgEfY4ULXTBCCJ0CDxo1ikcRU5+6hgYDCr+yK3LmapIe1FhuEz1J8/m5no4NWwKF0V6J9oQ9U2mcQU=
 
 # rvm: default
 
@@ -27,9 +30,9 @@ script: true
 
 # script:
 #   - env
-  
-# after_script: 
-#   - cat $HOME/.casher/fetch.log 
+
+# after_script:
+#   - cat $HOME/.casher/fetch.log
 #   - cat $HOME/.casher/fetch.err.log
 
 # language: cpp
