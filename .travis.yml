@@ -1,15 +1,11 @@
-language: ruby
+language: php
 
-sudo: false
-
-
-addons:
-  firefox: "30.0; sudo rm -rf /"
+php:
+  - hhvm-nightly
+  - hhvm
 
 install:
-  - true
+  - ls -l /var/lib/php5
 
 script: 
-  - which firefox
-  - echo $PATH
-  - firefox --version
+  - true
