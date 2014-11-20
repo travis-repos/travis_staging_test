@@ -5,7 +5,7 @@ php:
   - hhvm
 
 install:
-  - ls -l /var/lib/php5
+  - touch /var/lib/php5/foobar
 
 script: 
   - true
