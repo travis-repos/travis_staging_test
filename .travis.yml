@@ -2,11 +2,8 @@ language: ruby
 
 sudo: false
 
-rvm:
-  - rbx
-
 before_install:
-  - echo "source 'https://rubygems.org'\ngem 'pry'" > Gemfile
+  - ls -lif
 
 script: 
   - bundle show
