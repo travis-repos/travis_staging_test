@@ -1,13 +1,12 @@
-language: php
+language: ruby
 
 sudo: false
 
-php:
-  - hhvm-nightly
-  - hhvm
+rvm:
+  - rbx
 
-install:
-  - touch /var/lib/php5/foobar
+before_install:
+  - echo "source 'https://rubygems.org'\ngem 'pry'" > Gemfile
 
 script: 
-  - true
+  - bundle show
