@@ -3,7 +3,13 @@ language: ruby
 sudo: false
 
 before_install:
+  - touch z
+  - touch Z
+  - touch a
+  - touch AA
+  - touch X
+  - touch C
   - ls -lif
 
 script: 
-  - bundle show
+  - true
