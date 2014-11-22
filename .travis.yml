@@ -1,7 +1,5 @@
 language: objective-c
 
-sudo: false
-
 before_install:
   - touch z
   - touch Z
