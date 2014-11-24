@@ -1,5 +1,8 @@
 language: erlang
 
+otp_release:
+  - '17.3'
+
 group: dev
 
 before_install:
