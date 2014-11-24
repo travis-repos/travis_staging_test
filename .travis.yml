@@ -3,9 +3,8 @@ language: ruby
 addons:
   postgresql: "9.3"
 
-sudo: false
-
-install: true
+install:
+  - sudo apt-get install tree
 
 script:
-  - ls -l /var/ramfs/postgresql
+  - sudo tree /var/ramfs/postgresql
