@@ -1,12 +1,11 @@
-language: erlang
+language: ruby
 
-otp_release:
-  - '17.3'
+addons:
+  postgresql: "9.3"
 
-group: dev
+sudo: false
 
-before_install:
-  - kiex use 1.0.2
-  
-script: 
-  - elixir --version
+install: true
+
+script:
+  - ls -l /var/ramfs/postgresql
