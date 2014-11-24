@@ -6,7 +6,7 @@ otp_release:
 group: dev
 
 before_install:
-  - true
+  - kiex use 1.0.2
   
 script: 
   - elixir --version
