@@ -1,8 +1,11 @@
 language: ruby
 
-addons:
-  postgresql: "9.3"
-
+notifications:
+  hipchat:
+    rooms:
+      - secure: "E5FYOudzhEqM8UKJilfIka4UHJu+WGfr0t6BCYoLMsXlMNh099eunwbmcz978j9+X5VVvi7WEToSUs47c7RnjODsDYKdYfrGTcuiCs1y+vJnbdUG4Pi2sfrCTTHcmkm+wv9fL7z3OIA8eMIO8utyMl0ewLGyscLaZJa9/hdUT6E="
+    on_success: always
+    on_failure: always
 install:
   - true
 
