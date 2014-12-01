@@ -1,7 +1,4 @@
-sudo: false
-
-group: dev
-dist: trusty
+language: ruby
 
 cache:
   bundler: true
