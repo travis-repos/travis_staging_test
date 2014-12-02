@@ -1,5 +1,7 @@
 language: ruby
 
+dist: precise
+
 notifications:
   hipchat:
     rooms:
