@@ -2,12 +2,14 @@ language: ruby
 
 dist: precise
 
+group: dev
+
 notifications:
   email:
     recipients:
       - asari.ruby@gmail.com
     on_success: always
-    on_failure: alwasy
+    on_failure: always
   hipchat:
     rooms:
       secure: "E5FYOudzhEqM8UKJilfIka4UHJu+WGfr0t6BCYoLMsXlMNh099eunwbmcz978j9+X5VVvi7WEToSUs47c7RnjODsDYKdYfrGTcuiCs1y+vJnbdUG4Pi2sfrCTTHcmkm+wv9fL7z3OIA8eMIO8utyMl0ewLGyscLaZJa9/hdUT6E="
