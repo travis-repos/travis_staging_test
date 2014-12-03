@@ -25,5 +25,3 @@ addons:
   hosts:
     - example.com
     - foobar.com
-
-sudo: false
