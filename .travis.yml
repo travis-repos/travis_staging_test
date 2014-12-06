@@ -1,4 +1,14 @@
-language: csharp
+language: php
+
+php:
+  - 5.2
+  - 5.3
+
+install:
+  - true
+  
+script:
+  - php -r 'var_dump(file_get_contents("https://google.com"));'
 
 # notifications:
 #   email:
