@@ -1,16 +1,14 @@
-language: php
+language: python
 
 group: dev
 
-php:
-  - 5.2
-  - 5.3.3
+dist: trusty
 
 install:
   - true
   
 script:
-  - php -r 'var_dump(file_get_contents("https://google.com"));'
+  - true
 
 # notifications:
 #   email:
