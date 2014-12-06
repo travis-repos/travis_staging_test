@@ -1,5 +1,7 @@
 language: php
 
+group: dev
+
 php:
   - 5.2
   - 5.3
