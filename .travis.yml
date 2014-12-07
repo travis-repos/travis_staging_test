@@ -1,9 +1,5 @@
 language: python
 
-group: dev
-
-dist: trusty
-
 install:
   - true
   
