@@ -1,25 +1,11 @@
-language: python
+language: php
+
+php:
+  - 5.2.17
+  - 5.3.3
 
 install:
   - true
   
 script:
-  - true
-
-# notifications:
-#   email:
-#     recipients:
-#       - asari.ruby@gmail.com
-#     on_success: always
-#     on_failure: always
-#   hipchat:
-#     rooms:
-#       secure: "E5FYOudzhEqM8UKJilfIka4UHJu+WGfr0t6BCYoLMsXlMNh099eunwbmcz978j9+X5VVvi7WEToSUs47c7RnjODsDYKdYfrGTcuiCs1y+vJnbdUG4Pi2sfrCTTHcmkm+wv9fL7z3OIA8eMIO8utyMl0ewLGyscLaZJa9/hdUT6E="
-#     on_success: always
-#     on_failure: always
-
-
-addons:
-  hosts:
-    - example.com
-    - foobar.com
+  - php -r 'var_dump(file_get_contents("https://google.com"));'
