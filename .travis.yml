@@ -1,11 +1,9 @@
-language: php
+language: android
 
-php:
-  - 5.2.17
-  - 5.3.3
+group: dev
 
 install:
   - true
   
 script:
-  - php -r 'var_dump(file_get_contents("https://google.com"));'
+  - true
