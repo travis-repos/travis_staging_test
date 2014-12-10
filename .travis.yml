@@ -1,9 +1,2 @@
-language: android
+language: julia
 
-group: dev
-
-install:
-  - true
-  
-script:
-  - true
