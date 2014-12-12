@@ -1,5 +1,7 @@
 language: go
 
+group: dev
+
 env:
   - TRAVIS_FOO=foo
 
