@@ -1,6 +1,4 @@
-language: php
-
-sudo: false
+language: go
 
 env:
   - TRAVIS_FOO=foo
