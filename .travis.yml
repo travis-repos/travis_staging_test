@@ -16,3 +16,4 @@ deploy:
   key: latest/MyApp.zip
   application: MyApp
   deployment_group: MyDeploymentGroup
+  edge: true
