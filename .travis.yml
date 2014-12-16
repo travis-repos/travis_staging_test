@@ -1,6 +1,9 @@
 language: go
 
-group: dev
+sudo: false
+
+go:
+  - '1.4'
 
 env:
   - TRAVIS_FOO=foo
@@ -11,12 +14,3 @@ install:
 script:
   - env | grep TRAVIS_
 
-deploy:
-  provider: codedeploy
-  access_key_id: "YOUR AWS ACCESS KEY"
-  secret_access_key: "YOUR AWS SECRET KEY"
-  bucket: "S3 Bucket"
-  key: latest/MyApp.zip
-  application: MyApp
-  deployment_group: MyDeploymentGroup
-  edge: true
