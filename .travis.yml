@@ -1,15 +1,12 @@
-language: go
+language: ruby
 
 sudo: false
 
-go:
-  - '1.4'
-
-env:
-  - TRAVIS_FOO=foo
+ruby:
+  - 'rbx'
 
 install:
   - true
 
 script:
-  - env | grep TRAVIS_
+  - true
