@@ -1,12 +1,3 @@
-language: ruby
+language: dart
 
 sudo: false
-
-rvm:
-  - 'rbx'
-
-install:
-  - true
-
-script:
-  - true
