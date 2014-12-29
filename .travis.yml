@@ -2,9 +2,8 @@ language: ruby
 
 sudo: false
 
-addons:
-  hosts:
-    - foo
+rvm:
+  - 2.2.0
 
 install:
   - cat /etc/hosts
