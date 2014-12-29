@@ -1,3 +1,9 @@
-language: dart
+language: ruby
 
 sudo: false
+
+install:
+  - cat /etc/hosts
+
+script:
+  - true
