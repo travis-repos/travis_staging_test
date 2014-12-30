@@ -1,12 +1,3 @@
-language: ruby
+language: Erlang
 
 sudo: false
-
-rvm:
-  - 2.2.0
-
-install:
-  - cat /etc/hosts
-
-script:
-  - true
