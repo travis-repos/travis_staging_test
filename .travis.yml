@@ -3,4 +3,4 @@ language: ruby
 addons:
   jwt:
      saucelabs:
-        secure: <SAUCE_ACCESS_KEY=123456789 encrypted>
+        secure: '<SAUCE_ACCESS_KEY=123456789 encrypted>'
