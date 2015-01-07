@@ -1,12 +1,11 @@
 language: ruby
 
+rvm:
+  - jruby
+  - jruby-18mode
+
 install:
   - true
 
 script:
   - true
-
-addons:
-  jwt:
-     saucelabs:
-        secure: '<SAUCE_ACCESS_KEY=123456789 encrypted>'
