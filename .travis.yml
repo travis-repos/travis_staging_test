@@ -6,7 +6,7 @@ cache:
   ccache
 
 before_install:
-  - echo "foobar" > ~/.ccache/foo
+  - echo "foobar" > .ccache/foo
 
 install:
   - true
