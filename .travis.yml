@@ -5,13 +5,11 @@ sudo: false
 cache:
   ccache
 
-before_install:
+install:
   - echo "foobar" > .ccache/foo
   - cat $CASHER_DIR/mtime.yml || true
   - env | grep CCACHE || true
-
-install:
-  - true
+  - cat build.sh
 
 script:
   - true
