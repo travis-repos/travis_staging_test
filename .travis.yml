@@ -7,7 +7,7 @@ cache:
 
 before_install:
   - mkdir ~/.ccache
-  - touch ~/.ccache/foo
+  - echo "foobar" > ~/.ccache/foo
 
 install:
   - true
