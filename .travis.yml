@@ -1,9 +1,9 @@
-language: ruby
+language: c
 
 sudo: false
 
 cache:
-  - ccache
+  ccache
 
 before_install:
   - mkdir ~/.ccache
