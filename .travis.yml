@@ -3,7 +3,7 @@ language: c
 sudo: false
 
 git:
-  quiet: true
+  quiet: false
 
 install:
   - true
