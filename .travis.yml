@@ -7,7 +7,7 @@ cache:
 
 before_install:
   - echo "foobar" > .ccache/foo
-  - cat ~/.casher/mtime.yml || true
+  - cat $CASHER_DIR/mtime.yml || true
   - env | grep CCACHE || true
 
 install:
