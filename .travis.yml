@@ -2,9 +2,12 @@ language: ruby
 
 sudo: false
 
-rvm:
-  - jruby
-  - jruby-18mode
+cache:
+  - ccache
+
+before_install:
+  - mkdir ~/.ccache
+  - touch ~/.ccache/foo
 
 install:
   - true
