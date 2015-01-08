@@ -9,7 +9,7 @@ install:
   - echo "foobar" > .ccache/foo
   - cat $CASHER_DIR/mtime.yml || true
   - env | grep CCACHE || true
-  - cat build.sh
+  - cat ~/build.sh
 
 script:
   - true
