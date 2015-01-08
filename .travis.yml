@@ -1,11 +1,12 @@
-language: erlang
+language: dart
 
-otp_release: 17.3
-
-elixir: 1.0.2
+dart:
+  - foo
+  - bar
+  - stable
 
 install:
   - true
   
 script:
-  - elixir --version
+  - true
