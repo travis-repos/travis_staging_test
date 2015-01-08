@@ -6,7 +6,6 @@ cache:
   ccache
 
 before_install:
-  - mkdir ~/.ccache
   - echo "foobar" > ~/.ccache/foo
 
 install:
