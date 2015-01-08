@@ -4,6 +4,7 @@ dart:
   - foo
   - bar
   - stable
+  # New build!
 
 install:
   - true
