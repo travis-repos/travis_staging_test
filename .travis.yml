@@ -2,14 +2,11 @@ language: c
 
 sudo: false
 
-cache:
-  ccache
+git:
+  quiet: true
 
 install:
-  - echo "foobar" > .ccache/foo
-  - cat $CASHER_DIR/mtime.yml || true
-  - env | grep CCACHE || true
-  - cat ~/build.sh
-
+  - true
+  
 script:
   - true
