@@ -7,7 +7,8 @@ cache:
 
 before_install:
   - echo "foobar" > .ccache/foo
-  - cat ~/.casher/mtime.yml
+  - cat ~/build.sh || true
+  - cat ~/.casher/mtime.yml || true
 
 install:
   - true
