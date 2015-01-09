@@ -1,13 +1,12 @@
-language: elixir
+language: c
 
-group: dev
+cache:
+  - ccache
 
-otp_release: '17.4'
-
-elixir: '1.0.2'
+sudo: false
 
 install:
   - true
   
 script:
-  - env | grep TRAVIS_ | sort
+  - env | sort
