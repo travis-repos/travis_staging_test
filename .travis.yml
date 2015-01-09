@@ -2,8 +2,11 @@ language: c
 
 sudo: false
 
+env:
+  - CCACHE_DIR=foobar
+
 cache:
   ccache
 
 script:
-  - true
+  - grep casher ~/build.sh
