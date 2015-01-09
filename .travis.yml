@@ -1,12 +1,9 @@
-language: c
+language: python
 
 sudo: false
 
-env:
-  - CCACHE_DIR=foobar
-
 cache:
-  ccache
+  pip
 
 script:
-  - grep casher ~/build.sh
+  - grep -C 3 casher ~/build.sh
