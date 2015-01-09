@@ -3,13 +3,5 @@ language: c
 cache:
   ccache
 
-before_install:
-  - echo "foobar" > .ccache/foo
-  - cat ~/.casher/mtime.yml || true
-  - env || true
-
-install:
-  - true
-
 script:
   - true
