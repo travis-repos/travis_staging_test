@@ -10,4 +10,4 @@ install:
   - true
   
 script:
-  - true
+  - env | grep TRAVIS_ | sort
