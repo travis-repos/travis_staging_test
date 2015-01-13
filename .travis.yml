@@ -1,12 +1,6 @@
-language: python
+language: erlang
 
 sudo: false
 
-env:
-  - FOO=bar PIP_CACHE_DIR=bar XDG_CACHE_HOME=foo
-
-cache:
-  pip
-
 script:
-  - grep -C 3 casher ~/build.sh
+  - cat /etc/hosts
