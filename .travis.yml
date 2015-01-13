@@ -1,6 +1,4 @@
 language: erlang
 
-sudo: false
-
 script:
   - cat /etc/hosts
