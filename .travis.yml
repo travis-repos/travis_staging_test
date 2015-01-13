@@ -3,6 +3,7 @@ language: python
 sudo: false
 
 env:
+  - PIP_CACHE_DIR=bar
   - XDG_CACHE_HOME=foo
 
 cache:
