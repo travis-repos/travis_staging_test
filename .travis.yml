@@ -1,4 +1,9 @@
-language: erlang
+language: php
+
+php:
+  - hhvm
 
 script:
-  - cat /etc/hosts
+  - ls -l /etc/hhvm/php.ini
+  - sudo chown $(whoami) /etc/hhvm/php.ini
+  - ls -l /etc/hhvm/php.ini
