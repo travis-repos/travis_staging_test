@@ -1,7 +1,9 @@
 language: c
 
+sudo: false
+
 cache:
-  - ccache: false
+  - ccache: true
 
 install:
   - true
