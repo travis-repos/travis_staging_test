@@ -5,9 +5,7 @@ sudo: false
 cache:
   - ccache: true
 
-install:
-  - mkdir ~/.ccache
-
 script:
   - echo "foo" > ~/.ccache/foo
   - grep add ~/build.sh
+  - echo $CCACHE_DISABLE
