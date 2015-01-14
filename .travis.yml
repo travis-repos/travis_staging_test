@@ -9,4 +9,4 @@ install:
   - mkdir ~/.ccache
 
 script:
-  - touch ~/.ccache/foo
+  - echo "foo" > ~/.ccache/foo
