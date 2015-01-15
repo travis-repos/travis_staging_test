@@ -1,9 +1,10 @@
 language: c
 
-sudo: false
-
 cache:
   ccache
+  
+before_install:
+  - sudo apt-get install ccache
 
 script:
   - mkdir ~/.ccache
