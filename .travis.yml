@@ -1,7 +1,8 @@
 language: c
 
 cache:
-  ccache
+  directories:
+    - ~/.ccache
   
 before_install:
   - sudo apt-get install ccache
