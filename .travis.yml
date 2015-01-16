@@ -10,3 +10,4 @@ notifications:
     recipients:
       - builds@travis-ci.org
       - asari.ruby@gmail.com
+      - schema.whitelisting+sample@gmail.com
