@@ -1,13 +1,8 @@
-language: c
-
 sudo: false
+language: java
+jdk:
+  - openjdk7
+  - oraclejdk7
+  - oraclejdk8
 
-script:
-  - false
-
-notifications:
-  email:
-    recipients:
-      - builds@travis-ci.org
-      - asari.ruby@gmail.com
-      - schema.whitelisting+sample@gmail.com
+script: javac Test.java && java -Djava.net.preferIPv4Stack=true Test
