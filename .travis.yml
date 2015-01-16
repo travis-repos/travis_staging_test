@@ -7,4 +7,6 @@ script:
 
 notifications:
   email:
-    notifications@travis-ci.org
+    recipients:
+      - builds@travis-ci.org
+      - asari.ruby@gmail.com
