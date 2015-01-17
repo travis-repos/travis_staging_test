@@ -1,7 +1,1 @@
-language: java
-jdk:
-  - openjdk7
-  - oraclejdk7
-  - oraclejdk8
-
-script: javac Test.java && java -Djava.net.preferIPv4Stack=true Test
+language: elixir
