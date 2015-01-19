@@ -1,5 +1,3 @@
 language: elixir
 
 sudo: false
-
-group: dev
