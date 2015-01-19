@@ -1,6 +1,4 @@
 language: elixir
 
-sudo: false
-
 otp_release:
   - '17.3'
