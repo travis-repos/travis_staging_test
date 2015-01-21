@@ -1,4 +1,6 @@
-language: elixir
+language: ruby
 
-otp_release:
-  - '17.3'
+group: dev
+
+addons:
+  postgresql: "9.4"
