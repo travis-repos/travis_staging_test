@@ -1,9 +1,9 @@
-language: node_js
+language: ruby
 
 group: dev
 
-node_js:
-  - iojs
+rvm:
+  - jruby-9000
 
 addons:
   postgresql: "9.4"
