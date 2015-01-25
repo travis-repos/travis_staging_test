@@ -1,9 +1,9 @@
-language: ruby
+language: elixir
 
 group: dev
 
-rvm:
-  - jruby-9000
+otp_release:
+  - '17.4'
 
-addons:
-  postgresql: "9.4"
+script:
+  - true
