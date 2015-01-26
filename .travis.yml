@@ -1,5 +1,7 @@
 language: elixir
 
+group: dev
+
 otp_release:
   - '17.4'
 
