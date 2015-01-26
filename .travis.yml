@@ -1,4 +1,9 @@
-language: node_js
+language: elixir
+
+sudo: false
+
+otp_release:
+  - '17.3'
 
 install:
   - true
