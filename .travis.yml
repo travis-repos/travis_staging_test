@@ -1,9 +1,10 @@
-language: node_js
+language: ruby
 
-group: dev
+sudo: false
 
-node_js:
-  - iojs
+addons:
+  apt_packages:
+    - time
 
 install:
   - true
