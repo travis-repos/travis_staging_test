@@ -1,10 +1,10 @@
-language: ruby
+language: dart
 
 sudo: false
 
-addons:
-  apt_packages:
-    - time
+dart:
+  - dev
+  - stable
 
 install:
   - true
