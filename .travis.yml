@@ -1,11 +1,11 @@
-language: dart
+language: ruby
 
-sudo: false
+group: dev
 
-dart:
-  - dev
-  - stable
-
+rvm:
+  - jruby-9000
+  - jruby-1.7.18
+  
 install:
   - true
 
