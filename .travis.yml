@@ -1,10 +1,7 @@
-language: ruby
+language: php
 
-group: dev
-
-rvm:
-  - jruby-9000
-  - jruby-1.7.18
+before_install:
+  - composer self-update
   
 install:
   - true
