@@ -1,7 +1,8 @@
-language: node_js
+language: go
 
-node_js:
-  - iojs
+go:
+  - tip
+
 group: dev
 
 
@@ -9,4 +10,4 @@ install:
   - true
 
 script:
-  - nvm list |  env GREP_COLORS='mt=01;32' egrep -o '(iojs-)?v[0-9\.]+' | sort | uniq
+  - true
