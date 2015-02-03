@@ -9,4 +9,4 @@ install:
   - true
 
 script:
-  - nvm list
+  - nvm list |  env GREP_COLORS='mt=01;32' egrep -o '(iojs-)?v[0-9\.]+' | sort | uniq
