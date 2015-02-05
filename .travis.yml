@@ -5,6 +5,7 @@ group: dev
 otp_release:
   - 17.3
   - 17.4
+  
 
 install: true
 
