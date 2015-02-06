@@ -1,17 +1,10 @@
-language: elixir
+language: perl
 
-group: dev
-
-elixir:
-  - 1.0.2
-
-otp_release:
-  - 17.3
-  - 17.4
-  
+perl:
+  - 5.14.2
 
 install: true
 
 script:
-  - iex --version
+  - true
   
