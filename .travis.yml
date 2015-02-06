@@ -1,7 +1,9 @@
-language: perl
+language: scala
 
-perl:
-  - 5.14.2
+group: dev
+
+scala:
+   - 2.9.3
 
 install: true
 
