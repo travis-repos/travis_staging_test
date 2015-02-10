@@ -1,7 +1,5 @@
 language: node_js
 
-group: dev
-
 install: true
 
 script:
