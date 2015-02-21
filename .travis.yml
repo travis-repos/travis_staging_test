@@ -1,14 +1,6 @@
-language: elixir
-
-group: dev
-
-elixir:
-  - 1.0.3
-
-otp_release:
-  - 17.4
+language: ruby
 
 install: true
 
 script:
-  - true
+  - cat /proc/sys/net/ipv4/tcp_ecn
