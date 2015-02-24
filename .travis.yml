@@ -1,11 +1,10 @@
-sudo: false
-language: elixir
+language: ruby
 
-elixir: 1.0.3
+sudo: false
 
 install:
-  - kiex list known
-  - kiex selfupdate; kiex install 1.0.3
+  - true
   
 script:
-  - true
+  - cat /proc/sys/net/ipv4/tcp_ecn
+  
