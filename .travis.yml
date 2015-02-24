@@ -1,12 +1,28 @@
-language: ruby
-
 sudo: false
 
+language: python
+
+python:
+    - "3.3"
+
 install:
-  - wget -O installer.sh http://www.cs.utah.edu/plt/snapshots/current/installers/min-racket-current-x86_64-linux-precise.sh
-  - curl -vvvv -L -o installer.sh http://www.cs.utah.edu/plt/snapshots/current/installers/min-racket-current-x86_64-linux-precise.sh
-  - sh installer.sh --in-place --dest ~/racket/
+    - pip install -r requirements.txt
+
+addons:
+    postgresql: "9.3"
+
+env: DATABASE_URL=postgres://postgres@localhost:5432/codesy
+
+before_script:
+    - psql -c 'create database codesy;' -U postgres
 
 script:
-  - cat /proc/sys/net/ipv4/tcp_ecn
-  
+    - python manage.py test
+
+notifications:
+    irc:
+        channels:
+            - "irc.freenode.net#codesy"
+        on_success: always
+        on_failure: always
+        use_notice: true
