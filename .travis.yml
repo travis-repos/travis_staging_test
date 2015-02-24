@@ -3,7 +3,8 @@ language: ruby
 sudo: false
 
 install:
-  - curl -L -o installer.sh http://www.cs.utah.edu/plt/snapshots/current/installers/min-racket-current-x86_64-linux-precise.sh
+  - wget -O installer.sh http://www.cs.utah.edu/plt/snapshots/current/installers/min-racket-current-x86_64-linux-precise.sh
+  - curl -vvvv -L -o installer.sh http://www.cs.utah.edu/plt/snapshots/current/installers/min-racket-current-x86_64-linux-precise.sh
   - sh installer.sh --in-place --dest ~/racket/
 
 script:
