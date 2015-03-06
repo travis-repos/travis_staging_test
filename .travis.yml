@@ -1,4 +1,4 @@
-language: python
+language: ruby
 
 sudo: false
 
@@ -10,4 +10,4 @@ install:
   - true
 
 script:
-  - true
+  - "ruby -rresolv -e 'p Resolv.getaddress(\"localtest\")'"
