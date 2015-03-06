@@ -1,8 +1,10 @@
-language: elixir
+language: python
 
-elixir:
-  - 1.0.2
-  - 1.0.3
+sudo: false
+
+addons:
+  hosts:
+    - localtest
 
 install:
   - true
