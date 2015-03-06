@@ -1,11 +1,13 @@
-language: ruby
+language: python
 
-addons:
-  hosts:
-    - localtest
+sudo: false
+
+python:
+  - 3.4
+  - 3.5
 
 install:
   - true
 
 script:
-  - grep localtest /etc/hosts
+  - true
