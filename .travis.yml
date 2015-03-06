@@ -10,4 +10,4 @@ install:
   - true
 
 script:
-  - "ruby -rresolv -e 'p Resolv.getaddress(\"localtest\")'"
+  - grep localtest /etc/hosts
