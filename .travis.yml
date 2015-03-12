@@ -1,7 +1,7 @@
-language: ruby
+language: foo
 
 install:
   - true
 
 script:
-  - sudo docker run -i -t -u travis quay.io/travisci/travis-php:dev phpenv global 5.6
+  - sudo docker run -i -t -u travis ubuntu /bin/date
