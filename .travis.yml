@@ -4,4 +4,4 @@ install:
   - true
 
 script:
-  - true
+  - docker run -i -t /bin/date
