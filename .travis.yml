@@ -4,4 +4,4 @@ install:
   - true
 
 script:
-  - sudo docker run -i -t ubuntu /usr/bin/lsb_release -sa
+  - sudo docker run -i -t -u travis quay.io/travisci/travis-php:dev phpenv global 5.6
