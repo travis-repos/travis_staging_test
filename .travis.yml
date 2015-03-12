@@ -4,4 +4,4 @@ install:
   - true
 
 script:
-  - sudo docker run -i -t ubuntu /bin/date
+  - sudo docker run -i -t ubuntu /usr/bin/lsb_release -sa
