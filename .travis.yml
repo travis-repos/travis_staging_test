@@ -1,7 +1,7 @@
-language: foo
+language: ruby
 
 install:
   - true
 
 script:
-  - sudo docker run -i -t ubuntu /bin/date
+  - dpkg -l util-linux
