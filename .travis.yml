@@ -1,7 +1,13 @@
-language: foo
+language: python
+
+sudo: false
+
+python:
+  - nightly
+  - 3.4
 
 install:
   - true
 
 script:
-  - dpkg -l util-linux
+  - true
