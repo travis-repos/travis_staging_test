@@ -4,4 +4,4 @@ install:
   - true
 
 script:
-  - sudo docker run -i -t -u travis ubuntu /bin/date
+  - sudo docker run -i -t ubuntu /bin/date
