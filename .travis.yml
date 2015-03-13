@@ -1,13 +1,9 @@
-language: python
+language: foo
 
 sudo: false
-
-python:
-  - nightly
-  - 3.4
 
 install:
   - true
 
 script:
-  - true
+  - docker run -i -t -u travis ubuntu /bin/date
