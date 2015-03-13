@@ -1,7 +1,5 @@
 language: foo
 
-sudo: false
-
 install:
   - true
 
