@@ -5,3 +5,5 @@ install:
 
 script:
   - cat /etc/hosts
+  - nslookup $HOST
+  - ifconfig -a
