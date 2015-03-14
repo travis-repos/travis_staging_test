@@ -27,4 +27,4 @@ script:
   # Haskell!
   - ghc --version
   # Docker without sudo
-  - docker run -t -u travis quay.io/travis-ci/travis-ruby:dev /bin/date
+  - docker run -t -u travis quay.io/travisci/travis-ruby:dev rvm list
