@@ -4,5 +4,25 @@ install:
   - true
 
 script:
-  - id -a
-  - docker run -i -t ubuntu /bin/date
+  # Compilers!
+  - gcc --version
+  - clang --version
+  # elixir!!
+  - source ~/otp/17.4/activate
+  - elixir --version
+  # python!
+  - source ~/virtualenv/python3.4/activate
+  - python --version
+  # ruby!
+  - rvm use 2.2.0
+  - ruby --version
+  # PHP!
+  - phpenv global 5.6
+  - php --version
+  # Java!
+  - jdk_switcher use oraclejdk8
+  - java -version
+  - jdk_switcher use openjdk7
+  - java -version
+  # Haskell!
+  - ghc --version
