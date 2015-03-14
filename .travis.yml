@@ -5,4 +5,4 @@ install:
 
 script:
   - id -a
-  - docker run -i -t -u travis ubuntu /bin/date
+  - docker run -i -t ubuntu /bin/date
