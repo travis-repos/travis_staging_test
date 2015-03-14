@@ -26,3 +26,5 @@ script:
   - java -version
   # Haskell!
   - ghc --version
+  # Docker without sudo
+  - docker run -t -u travis quay.io/travis-ci/travis-ruby:dev /bin/date
