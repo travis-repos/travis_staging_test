@@ -8,6 +8,8 @@ cache:
   code_fetch_verbose: true
   edge: true
 
+before_install:
+  - cat $CASHER_DIR/fetch.log
 install:
   - true
 script:
