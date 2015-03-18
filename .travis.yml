@@ -6,6 +6,7 @@ cache:
   directories:
     - $TRAVIS_BUILD_DIR/vendor
   code_fetch_verbose: true
+  edge: true
 
 install:
   - true
