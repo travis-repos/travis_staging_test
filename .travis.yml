@@ -3,7 +3,9 @@ language: ruby
 sudo: false
 
 install:
-  - true
+  - echo ${rvm_recommended_ruby}
+  - echo 'ruby-2.2.1' > .ruby-version
+  - echo ${rvm_recommended_ruby}
 script:
   - true
 
