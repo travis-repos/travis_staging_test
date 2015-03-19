@@ -2,15 +2,8 @@ language: ruby
 
 sudo: false
 
-cache:
-  directories:
-    - $TRAVIS_BUILD_DIR/vendor
-  code_fetch_verbose: true
-  edge: true
-
-before_install:
-  - cat $CASHER_DIR/fetch.log
 install:
   - true
 script:
-  - docker run -i -t ubuntu /bin/date
+  - true
+
