@@ -5,12 +5,8 @@ env:
   - LANG=php
   - LANG=python
   - LANG=perl
-  - LANG=android
-  - NUM=5
-  - NUM=6
-  - NUM=7
-  - NUM=8
-  - NUM=9
+  - LANG=erlang
+  - LANG=jvm
 
 dist: trusty
 
@@ -20,5 +16,5 @@ node_js:
 install: true
 
 script:
-  - docker run -i -t ubuntu /bin/date
+  - docker run -i -t -u travis quay.io/travisci/travis-$LANG /bin/date
 
