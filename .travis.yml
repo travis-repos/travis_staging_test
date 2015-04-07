@@ -6,5 +6,6 @@ haxe:
 
 install:
   - true
+
 script:
   - true
