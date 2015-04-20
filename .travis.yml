@@ -1,11 +1,10 @@
 language: ruby
 
-notifications:
-  email:
-    - 'foo@example.com'
+group: dev
 
 install:
   - true
 
 script:
-  - true
+  - ps -ef | grep mysql || true
+  - ls -l /var/run/mysqld || true
