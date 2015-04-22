@@ -5,6 +5,9 @@ dist: trusty
 install:
   - true
 
+services:
+  - cassandra
+  
 script:
-  - ps -ef | grep mysql || true
-  - ls -l /var/run/mysqld || true
+  - /usr/local/cassandra/bin/nodetool version
+  - ruby -r socket -e 'puts TCPSocket.new("localhost", 9042)'
