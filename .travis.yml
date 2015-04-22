@@ -1,6 +1,6 @@
 language: ruby
 
-group: dev
+dist: trusty
 
 install:
   - true
