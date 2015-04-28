@@ -1,5 +1,6 @@
 language: ruby
 
+sudo: false
 install:
   - true
 
@@ -8,4 +9,4 @@ services:
   
 script:
   - ls /usr/local/
-  - /usr/local/maven-3.2.5/bin/mvn -version
+  - /usr/local/cassandra/bin/nodetool version
