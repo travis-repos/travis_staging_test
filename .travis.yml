@@ -1,11 +1,10 @@
-language: ruby
+language: php
+
+php:
+  - hhvm-nightly
 
 install:
   - true
 
-services:
-  - cassandra
-  
 script:
-  - ls /usr/local/
-  - /usr/local/cassandra/bin/nodetool version
+  - true
