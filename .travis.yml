@@ -1,8 +1,5 @@
-language: php
+language: java
 
-php:
-  - hhvm-nightly
-  
 sudo: false
 
 install:
