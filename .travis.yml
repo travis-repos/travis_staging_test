@@ -1,15 +1,13 @@
 language: android
 
-sudo: false
-
-jdk:
-  - openjdk6
-  - openjdk7
-  - oraclejdk7
-  - oraclejdk8
-
 install:
-  - true
+  - sudo pyenv python3.4.3 /opt/python/python3.4.3
+  - sudo ln -s /opt/python/python3.4.3/bin/python3.4.3 /opt/python/python3.4.3/bin/python
+  - sudo chown travis /opt/python/python3.4.3/bin/python
+  - sudo virtualenv --distribute --python=/opt/python/python3.4.3/bin/python /home/travis/virtualenv
+  - export PATH=/opt/python/python3.4.3/bin:$PATH
+  - which python
+  - python --version
 
 script:
   - ldd --version
