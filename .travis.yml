@@ -1,6 +1,6 @@
 language: android
 
-dist: trusty
+sudo: false
 
 jdk:
   - openjdk6
@@ -12,6 +12,4 @@ install:
   - true
 
 script:
-  - env | grep MALLOC
-  - ldd --version
-  - for x in 5 10 100 1000 10000 100000 1000000 1280000; do echo $x; env MALLOC_ARENA_MAX=16 java -Xmx${x}g -XX:+PrintFlagsFinal -version 2>&1 | grep MaxHeapSize; done  
+  - true
