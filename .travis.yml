@@ -2,7 +2,7 @@ language: android
 
 install:
   - PYTHON_VERSION=3.4.2
-  - sudo python-build $PYTHON_VERSION /opt/python/python${PYTHON_VERSION}
+  - sudo /usr/local/bin/python-build $PYTHON_VERSION /opt/python/python${PYTHON_VERSION}
   - sudo virtualenv --distribute --python=/opt/python/python${PYTHON_VERSION}/bin/python /home/travis/virtualenv
   - export PATH=/opt/python/python${PYTHON_VERSION}/bin:$PATH
   - which python
