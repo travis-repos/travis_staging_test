@@ -1,14 +1,9 @@
-language: android
+language: perl6
 
-android:
-  components:
-    - build-tools-22.0.1
+sudo: false
 
 install:
   - true
 
 script:
-  - ldd --version
-  - java -XX:+PrintFlagsFinal -version | grep MaxHeapSize
-  - for x in 5 10 100 1000 10000 100000 1000000 1280000; do echo $x; java -Xmx${x}g -XX:+PrintFlagsFinal -version 2>&1 | grep MaxHeapSize; done  
-  - for x in 5 10 100 1000 10000 100000 1000000 1280000; do echo $x; export JAVA_OPTS="-Xmx${x}g"; java -XX:+PrintFlagsFinal -version 2>&1 | grep MaxHeapSize; done  
+  - true
