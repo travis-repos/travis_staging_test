@@ -1,7 +1,9 @@
-language: perl6
+language: ruby
+
+sudo: false
 
 install:
   - true
 
 script:
-  - true
+  - cat /etc/hosts
