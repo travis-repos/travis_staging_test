@@ -15,5 +15,5 @@ script:
 notifications:
   slack:
     rooms:
-      - secure: "dfssv4QgeFaX/0jfWL78poD+b8gtidKQIJDhgSy+z9wMiwC/+3vrv64wI4huk9iXcn2szMh2RGeM/B9LTAdlzfBCkHPKkfa3MY66iXBxXTmpxpOdKAPEOnpKm+usjdRI8Og/WPLv72iwtW6SF41yo9wdM+MGqjpMyMJs+vXUV7o="
+      - secure: "DkYLJOIoJ1gQ4DXESFUUD1uzrlAPcSneDqu/5Dh86o/UXW6RKAtSK9gkf0e0/YjzX+taAjnQEZ1rIF12apDdWMBmitiIH7t/XSXnQOnq77v/X7yjjzyg9C1IWyn1UyuESHDJhwPu4tSqVIlVunveiO5IJgm5T1flav7oZV6X8MU="
 
