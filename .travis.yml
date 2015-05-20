@@ -10,11 +10,12 @@ install:
   - true
 
 script:
-  - cat /etc/hosts
+  - false
 
 notifications:
   slack:
     on_success: always
+    on_failure: change
     rooms:
       - secure: "DkYLJOIoJ1gQ4DXESFUUD1uzrlAPcSneDqu/5Dh86o/UXW6RKAtSK9gkf0e0/YjzX+taAjnQEZ1rIF12apDdWMBmitiIH7t/XSXnQOnq77v/X7yjjzyg9C1IWyn1UyuESHDJhwPu4tSqVIlVunveiO5IJgm5T1flav7oZV6X8MU="
 
