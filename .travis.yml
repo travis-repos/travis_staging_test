@@ -11,3 +11,9 @@ install:
 
 script:
   - cat /etc/hosts
+
+notifications:
+  slack:
+    rooms:
+      - secure: "dfssv4QgeFaX/0jfWL78poD+b8gtidKQIJDhgSy+z9wMiwC/+3vrv64wI4huk9iXcn2szMh2RGeM/B9LTAdlzfBCkHPKkfa3MY66iXBxXTmpxpOdKAPEOnpKm+usjdRI8Og/WPLv72iwtW6SF41yo9wdM+MGqjpMyMJs+vXUV7o="
+
