@@ -10,7 +10,7 @@ install:
   - true
 
 script:
-  - false
+  - true
 
 notifications:
   slack:
