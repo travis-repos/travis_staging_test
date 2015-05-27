@@ -1,7 +1,5 @@
 language: perl6
 
-sudo: false
-
 addons:
   hosts:
     - foo.example.com
