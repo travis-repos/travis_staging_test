@@ -10,7 +10,7 @@ install:
   - true
 
 script:
-  - true
+  - cat /etc/hosts
 
 notifications:
   slack:
