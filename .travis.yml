@@ -1,19 +1,12 @@
-language: perl6
+language: ruby
 
 addons:
-  hosts:
-    - foo.example.com
+  jwt: 
+     secure: "U00VE64y8EW5xlLr382ay45QulOVyMlGkPaigYkPtgaltnFG1FkN97zmAifwDMZFPVnzS6OaRt9+GGw6thOhDddGTBZ6ywlIXCI2eQCuQh1kFXX1O1PTb25C1RC5DXImatfm21tucvoNOduyVsrMPGm6TOGShcfM5gErf/tBCJg="
 
 install:
   - true
 
 script:
   - cat /etc/hosts
-
-notifications:
-  slack:
-    on_success: change
-    on_failure: always
-    rooms:
-      - secure: "DkYLJOIoJ1gQ4DXESFUUD1uzrlAPcSneDqu/5Dh86o/UXW6RKAtSK9gkf0e0/YjzX+taAjnQEZ1rIF12apDdWMBmitiIH7t/XSXnQOnq77v/X7yjjzyg9C1IWyn1UyuESHDJhwPu4tSqVIlVunveiO5IJgm5T1flav7oZV6X8MU="
 
