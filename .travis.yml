@@ -1,8 +1,6 @@
 language: ruby
 
-addons:
-  jwt: 
-     secure: "U00VE64y8EW5xlLr382ay45QulOVyMlGkPaigYkPtgaltnFG1FkN97zmAifwDMZFPVnzS6OaRt9+GGw6thOhDddGTBZ6ywlIXCI2eQCuQh1kFXX1O1PTb25C1RC5DXImatfm21tucvoNOduyVsrMPGm6TOGShcfM5gErf/tBCJg="
+group: foobar
 
 install:
   - true
