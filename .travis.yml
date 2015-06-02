@@ -1,10 +1,16 @@
-language: ruby
+language: elixir
 
-group: foobar
+elixir:
+  - 1.0.4
+
+otp_release:
+  - 17.4
+
+sudo: false
 
 install:
   - true
 
 script:
-  - cat /etc/hosts
+  - true
 
