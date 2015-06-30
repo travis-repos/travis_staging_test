@@ -2,13 +2,13 @@ language: perl6
 
 sudo: false
 
-perl6:
-  - latest
-  - 2015.06
 
 install:
   - true
 
 script:
   - true
-  
+
+deploy:
+  provider: heroku
+  edge: local
