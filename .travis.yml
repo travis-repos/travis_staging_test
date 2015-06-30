@@ -1,13 +1,14 @@
-language: ruby
+language: perl6
 
 sudo: false
 
-rvm:
-  - 2.1.5
-  
-script:
+perl6:
+  - latest
+  - 2015.06
+
+install:
   - true
 
-cache:
-  bundler: true
-  branch: 'ha-feature-gzip-default'
+script:
+  - true
+  
