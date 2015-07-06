@@ -1,7 +1,9 @@
-language: ruby
+language: erlang
+
+otp_release:
+  - '18.0'
 
 sudo: false
-
 
 install:
   - true
@@ -9,5 +11,3 @@ install:
 script:
   - true
 
-deploy:
-  provider: heroku
