@@ -36,6 +36,8 @@ env:
 
 before_script:
   - 'echo $FOO'
+  - 'echo $SECURE_FOO'
+  - 'echo $SECURE_BAR'
 
 # script:
 #   - env
