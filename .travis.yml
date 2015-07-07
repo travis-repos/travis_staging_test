@@ -1,11 +1,8 @@
-language: elixir
-
-elixir:
-  - 1.0.4
+language: erlang
 
 otp_release:
   - '17.5'
-  - '18.0'
+  - '17.4'
 
 sudo: false
 
