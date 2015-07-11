@@ -42,14 +42,14 @@ before_script:
 script:
   - env
 
-env:
-  - FOO=foo
-  - BAR=bar
-  - BAZ=baz
-  - BAM=bam
-  - BUM=bum
-  - FIZ=fiz
-  - FAZ=faz
+# env:
+#   - FOO=foo
+#   - BAR=bar
+#   - BAZ=baz
+#   - BAM=bam
+#   - BUM=bum
+#   - FIZ=fiz
+#   - FAZ=faz
 
 
 # after_script:
