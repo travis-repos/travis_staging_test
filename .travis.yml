@@ -8,7 +8,7 @@ cache:
     - foo
     - bar
 
-install:
+before_install:
   - touch foo/bar
   - touch bar/baz
 
