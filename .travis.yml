@@ -12,3 +12,11 @@ before_install:
   - touch foo/bar
   - touch bar/baz
 
+install: true
+
+script: true
+
+after_script:
+  - cat $CASHER_DIR/bin/casher
+  - cat $CASHER_DIR/tar.log
+  - cat $CASHER_DIR/tar.err.log
