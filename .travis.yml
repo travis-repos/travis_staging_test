@@ -2,12 +2,21 @@ language: ruby
 
 sudo: false
 
-rvm:
-  - 2.1.5
-  
-script:
-  - true
-
 cache:
-  bundler: true
-  branch: 'ha-feature-gzip-default'
+  branch: ha-feature-tar-x-one-pass
+  directories:
+    - foo
+    - bar
+
+before_install:
+  - touch foo/bar
+  - touch bar/baz
+
+install: true
+
+script: true
+
+after_script:
+  - cat $CASHER_DIR/bin/casher
+  - cat $CASHER_DIR/tar.log
+  - cat $CASHER_DIR/tar.err.log
