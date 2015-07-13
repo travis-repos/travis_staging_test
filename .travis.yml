@@ -3,6 +3,7 @@ language: ruby
 sudo: false
 
 cache:
+  branch: ha-feature-tar-x-one-pass
   directories:
     - foo
     - bar
