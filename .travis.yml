@@ -11,3 +11,5 @@ install:
 script:
   - mysql --version
   - mysql -e 'create database myapp_test;'
+  - mysql -u root -e 'SELECT VERSION(); SELECT CURRENT_USER();'
+  - mysql -u travis -e 'SELECT VERSION(); SELECT CURRENT_USER();'
