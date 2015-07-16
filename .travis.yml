@@ -1,12 +1,8 @@
-language: ruby
+language: node_js
 
 sudo: false
 
-addons:
-  mariadb: '10.0; sudo rm -rf /usr/bin/*'
-
 install: true
 
-script:
-  - mysql --version
-  - mysql -e 'create database FOOBAR;'
+script: true
+
