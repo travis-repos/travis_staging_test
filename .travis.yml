@@ -1,15 +1,5 @@
-language: ruby
+language: objective-c
 
-sudo: false
+install: true
 
-addons:
-  mariadb: '10.1'
-
-install:
-  - true
-  
-script:
-  - mysql --version
-  - mysql -e 'create database myapp_test;'
-  - mysql -u root -e 'SELECT VERSION(); SELECT CURRENT_USER();'
-  - mysql -u travis -e 'SELECT VERSION(); SELECT CURRENT_USER();'
+script: true
