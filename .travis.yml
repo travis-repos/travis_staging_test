@@ -1,5 +1,7 @@
 language: ruby
 
+sudo: false
+
 addons:
   mariadb: '10.1'
 
