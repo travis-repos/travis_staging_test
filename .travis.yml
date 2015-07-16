@@ -1,5 +1,10 @@
-language: objective-c
+language: ruby
+
+addons:
+  mariadb: '10.1'
 
 install: true
 
-script: true
+script:
+  - mysql --version
+  - mysql -e 'create database FOOBAR;'
