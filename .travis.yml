@@ -9,4 +9,5 @@ install:
   - true
   
 script:
-  - true
+  - mysql --version
+  - - mysql -e 'create database myapp_test;'
