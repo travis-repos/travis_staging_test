@@ -9,4 +9,4 @@ cache:
   bundler: true
 
 script:
-  - file $CASHER_DIR/fetch.*
+  - tar tzvf $CASHER_DIR/fetch.tgz
