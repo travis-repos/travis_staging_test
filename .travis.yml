@@ -4,7 +4,8 @@ sudo: false
 
 cache:
   branch: 'ha-feature-exit-status'
-  bundler: true
+  directories:
+    - foo
 
 script:
-  - tar tzvf $CASHER_DIR/fetch.tgz
+  - true
