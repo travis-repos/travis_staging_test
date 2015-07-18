@@ -1,9 +1,9 @@
-language: node_js
+language: ruby
 
 sudo: false
 
-install: true
+cache:
+  bundler: true
 
-script: 
-  - echo $TRAVIS_NODE_VERSION
-
+script:
+  - true
