@@ -8,4 +8,5 @@ cache:
     - foo
 
 script:
-  - true
+  - cat $CASHER_DIR/fetch.log
+  - cat $CASHER_DIR/fetch.err.log
