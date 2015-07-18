@@ -9,4 +9,4 @@ cache:
   bundler: true
 
 script:
-  - true
+  - cat $CASHER_DIR/bin/casher
