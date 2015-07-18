@@ -10,3 +10,4 @@ cache:
 script:
   - cat $CASHER_DIR/fetch.log
   - cat $CASHER_DIR/fetch.err.log
+  - echo $CACHE_FETCH_EXIT_STATUS
