@@ -1,13 +1,13 @@
-language: scala
+language: python
 
 sudo: false
 
-cache:
-  branch: 'ha-feature-exit-status'
-  directories:
-    - foo
+python:
+  - 3.5.0b3
+  - 3.5-dev
+  - nightly
+
+install: true
 
 script:
-  - cat $CASHER_DIR/fetch.log
-  - cat $CASHER_DIR/fetch.err.log
-  - echo $CACHE_FETCH_EXIT_STATUS
+  - true
