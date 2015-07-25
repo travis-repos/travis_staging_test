@@ -2,9 +2,9 @@ language: ruby
 
 # sudo: false
 
-os: 
-  - linux
-  - osx
+# os: 
+#   - linux
+#   - osx
 
 cache:
   bundler: true
@@ -46,17 +46,17 @@ before_script:
 script:
   - env
 
-# env:
-#   - FOO=foo
-#   - BAR=bar
-#   - BAZ=baz
-#   - BAM=bam
-#   - BUM=bum
-#   - FIZ=fiz
-#   - FAZ=faz
-#   - FUZ=fuz
-#   - FUM=fum
-#   - FAM=fam
+env:
+  - FOO=foo
+  - BAR=bar
+  - BAZ=baz
+  - BAM=bam
+  - BUM=bum
+  - FIZ=fiz
+  - FAZ=faz
+  - FUZ=fuz
+  - FUM=fum
+  - FAM=fam
 
 
 # after_script:
