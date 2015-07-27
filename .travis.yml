@@ -1,80 +1,11 @@
-language: ruby
+language: python
 
 sudo: false
 
-# os: 
-#   - linux
-#   - osx
+addons:
+  mariadb: "10.1"
 
-cache:
-  bundler: true
-  edge: true
-
-services:
-  - redis
-
-script: sleep 10
-
-notifications:
-  email: false
-    # recipients:
-    #   - me@svenfuchs.com
-    # on_success: always
-    # on_failure: always
-
-  # hipchat: a21b28b2863acbee3ccb17da36a173
-  # hipchat: iKuhOUz7m5rQtpO5xvWqqGCGykZN8gLeQLC7Ni5r@api.hipchat.com/111525
-  hipchat:
-    secure: BkLWSF+M2I2VCmRWdMA70shdxPG+J+U0+XE17mcu1lUsvGtCcJwb05hZhf5DL88bAubK/yKSpY4tghGcHq3q2278XiAC7TQH2wmDvkOut2iL86H0EiKAhmCMFBlY0qjIC53Y7LF0yKamXwFmyfds6aewN+33hmYcE7fvJezoGHM=
-
-# rvm: default
-
-# git:
-#   strategy: tarball
-
-env:
- global:
-   - secure: "O5fJhyTAuCq8GYwFaXxZ+MFEb86ONsj9jWxz6/GQoCEIb3z6Ie6Kfzqb001JWsqOPQ8Wyn4EMtDlAY/7nzWW978fWOUEyag+zMDzQwCd1Mk2TA2PK7jNTDTw8OcTOHCkcMnQTJU3JebcLVpRIFnctx9jVJHbNCpe6kVsyl21Igg="
- matrix:
-   - secure: "fIRtWVB5Xv5XwYepUCI56a5s4qt71QZEjxiRArzqJ3JsqBTZHI/EIxWXXojOYf6NLLA+yE+7wcUI68gqaLoHgTIuXdwn2mRFrCjlD0+aUpxmrruF7hIGy6ntE5KHxNY+VWKvxaS9qPALZidLlFj5lGKccHQngTckG1r0Gsj0kDA="
-
-before_script:
-  - 'echo $FOO'
-  - 'echo $SECURE_FOO'
-  - 'echo $SECURE_BAR'
+install: true
 
 script:
-  - env
-
-env:
-  - FOO=foo
-  - BAR=bar
-  - BAZ=baz
-  - BAM=bam
-  - BUM=bum
-  - FIZ=fiz
-  - FAZ=faz
-  - FUZ=fuz
-  - FUM=fum
-  - FAM=fam
-
-
-# after_script:
-#   - cat $HOME/.casher/fetch.log
-#   - cat $HOME/.casher/fetch.err.log
-
-# language: cpp
-# matrix:
-#    include:
-#     - os: linux
-#       compiler: gcc
-#       env: JULIAVERSION="juliareleases"
-#     - os: linux
-#       compiler: gcc
-#       env: JULIAVERSION="julianightlies"
-#     - os: osx
-#       compiler: gcc
-#       env: JULIAVERSION="juliareleases"
-#     - os: osx
-#       compiler: gcc
-#       env: JULIAVERSION="julianightlies"
+  - true
