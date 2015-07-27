@@ -2,10 +2,8 @@ language: python
 
 sudo: false
 
-python:
-  - 3.5.0b3
-  - 3.5-dev
-  - nightly
+addons:
+  mariadb: "10.1"
 
 install: true
 
