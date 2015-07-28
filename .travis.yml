@@ -1,9 +1,10 @@
-language: python
+language: ruby
 
 sudo: false
 
-addons:
-  mariadb: "10.1"
+ruby:
+  - 2.1.6
+  - jruby-9.0.0.0
 
 install: true
 
