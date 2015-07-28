@@ -2,11 +2,15 @@ language: ruby
 
 sudo: false
 
+cache:
+  bundler: true
+
 ruby:
+  - 1.9.3
+  - 2.1.5
   - 2.1.6
   - jruby-9.0.0.0
-
-install: true
+  - rbx
 
 script:
   - true
