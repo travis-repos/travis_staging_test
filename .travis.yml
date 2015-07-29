@@ -15,3 +15,7 @@ install:
 
 script:
   - true
+
+matrix:
+  allow_failures:
+    - foobar
