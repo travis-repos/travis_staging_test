@@ -4,5 +4,7 @@ sudo: false
 
 cache: bundler
 
+gemfile: Gemfile
+
 script:
   - true
