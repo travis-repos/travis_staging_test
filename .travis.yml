@@ -2,7 +2,9 @@ language: ruby
 
 sudo: false
 
-cache: bundler
+cache:
+  bundler: true
+  branch: verbose-logging
 
 script:
   - cat ~/build.sh
