@@ -1,10 +1,14 @@
-language: ruby
+language: go
 
 sudo: false
 
 cache:
-  bundler: true
-  branch: verbose-logging
+  directoris:
+    - foo/bar
+
+before_isntall:
+  - mkdir -p foo
+  - touch foo/bar
 
 script:
-  - cat ~/build.sh
+  - echo hello
