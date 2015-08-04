@@ -3,7 +3,7 @@ language: go
 sudo: false
 
 cache:
-  directoris:
+  directories:
     - foo/bar
 
 before_isntall:
