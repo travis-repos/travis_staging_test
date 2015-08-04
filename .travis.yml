@@ -1,14 +1,12 @@
-language: go
+language: java
 
 sudo: false
 
-cache:
-  directories:
-    - foo/bar
-
 before_isntall:
-  - mkdir -p foo
-  - touch foo/bar
+  - cat /etc/mavenrc
+
+install:
+  - true
 
 script:
   - echo hello
