@@ -1,12 +1,13 @@
-language: java
+language: ruby
 
 sudo: false
 
-before_install:
-  - cat /etc/mavenrc
+cache:
+  branch: verbose-logging
+  bundler: true
 
-install:
-  - true
+before_install:
+  - echo -e "source 'https://rubygems.org'\ngem 'i18n'" > Gemfile
 
 script:
   - echo hello
