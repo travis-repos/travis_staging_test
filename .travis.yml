@@ -3,7 +3,7 @@ language: ruby
 sudo: false
 
 cache:
-  branch: verbose-logging
+  branch: ha-feature-curl-l
   bundler: true
 
 before_install:
