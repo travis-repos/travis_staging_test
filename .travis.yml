@@ -16,7 +16,7 @@ services:
 script: sleep 10
 
 notifications:
-  email: false
+  email: 
     recipients:
       - me@svenfuchs.com
     on_success: always
