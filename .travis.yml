@@ -2,11 +2,11 @@ language: ruby
 
 sudo: false
 
-cache:
-  bundler: true
-
-before_install:
-  - echo -e "source 'https://rubygems.org'\ngem 'i18n'" > Gemfile
-
+addons:
+  firefox: latest
+  
+install:
+  - true
+  
 script:
-  - echo hello
+  - firefox --version
