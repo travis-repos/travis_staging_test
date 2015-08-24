@@ -1,12 +1,11 @@
-language: ruby
+language: c
 
 sudo: false
 
-addons:
-  firefox: latest
-  
+cache: ccache
+
 install:
   - true
   
 script:
-  - firefox --version
+  - true
