@@ -1,11 +1,7 @@
-language: c
+language: node_js
 
 sudo: false
 
-cache: ccache
+node_js:
+  - '0.12'
 
-install:
-  - true
-  
-script:
-  - true
