@@ -5,3 +5,12 @@ sudo: false
 node_js:
   - '0.12'
 
+deploy:
+  provider: S3
+  edge:
+    branch: 'revert-297-deis-updates'
+  access_key_id: foo
+  secret_access_key: bar
+  bucket: baz
+  on:
+    all_branches: true
