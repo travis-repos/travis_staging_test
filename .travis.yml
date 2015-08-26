@@ -5,6 +5,10 @@ sudo: false
 node_js:
   - '0.12'
 
+install: true
+
+script: true
+
 deploy:
   provider: S3
   edge:
