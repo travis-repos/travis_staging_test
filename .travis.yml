@@ -1,9 +1,6 @@
-language: node_js
+language: ruby
 
 sudo: false
-
-node_js:
-  - '0.12'
 
 install: true
 
@@ -12,7 +9,8 @@ script: true
 deploy:
   provider: boxfuse
   edge:
-    branch: '+refs/pull/319/merge:'
+    source: 'axelfontaine/dpl'
+    branch: 'master'
   access_key_id: foo
   secret_access_key: bar
   bucket: baz
