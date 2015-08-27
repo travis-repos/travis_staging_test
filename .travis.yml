@@ -7,10 +7,8 @@ install: true
 script: true
 
 deploy:
-  provider: boxfuse
-  edge:
-    source: 'axelfontaine/dpl'
-    branch: 'master'
+  provider: foobar
+  edge: true
   access_key_id: foo
   secret_access_key: bar
   bucket: baz
