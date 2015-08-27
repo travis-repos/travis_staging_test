@@ -6,12 +6,3 @@ install: true
 
 script: true
 
-deploy:
-  provider: s3
-  edge: true
-  access_key_id: foo
-  secret_access_key: bar
-  bucket: baz
-  on:
-    all_branches: true
-
