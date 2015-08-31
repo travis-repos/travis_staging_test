@@ -1,8 +1,19 @@
-language: ruby
+language: python
 
-os: osx
-
-sudo: false
+python:
+  - 3.4.3
+  - nightly
+  
+matrix:
+  include:
+    - sudo: required
+      services:
+        - docker
+      env:
+        - RELEASE=trusty
+    - sudo: false
+      env:
+        - RELEASE=precise
 
 install: true
 
