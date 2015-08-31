@@ -3,17 +3,11 @@ language: python
 python:
   - 3.4.3
   - nightly
-  
-matrix:
-  include:
-    - sudo: required
-      services:
-        - docker
-      env:
-        - RELEASE=trusty
-    - sudo: false
-      env:
-        - RELEASE=precise
+
+sudo: required
+
+services:
+  - docker
 
 install: true
 
