@@ -11,14 +11,3 @@ services:
 install: true
 
 script: true
-
-deploy:
-  - provider: s3
-    access_key_id: "YOUR_AWS_ACCESS_KEY"
-    secret_access_key: "YOUR_AWS_SECRET_KEY"
-    bucket: "S3 Bucket"
-  - provider: s3
-    access_key_id: "YOUR_AWS_ACCESS_KEY"
-    secret_access_key: "YOUR_AWS_SECRET_KEY"
-    bucket: "S3 Bucket"
-  
