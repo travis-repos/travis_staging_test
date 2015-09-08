@@ -1,12 +1,5 @@
 language: ruby
-
 sudo: false
-
-addons:
-  firefox: latest
-
-install: true
-
-script:
-  - firefox --version
-
+gemfile: path/to/Gemfile
+before_install: cd $(dirname $BUNDLE_GEMFILE)
+script: bundle exec rake
