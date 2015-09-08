@@ -1,11 +1,12 @@
 language: ruby
 
-sudo: required
+sudo: false
 
-services:
-  - docker
+addons:
+  firefox: latest
 
 install: true
 
-script: true
+script:
+  - firefox --version
 
