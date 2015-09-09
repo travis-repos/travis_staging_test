@@ -1,5 +1,8 @@
 language: ruby
-sudo: false
+sudo: required
+
+services:
+  - docker
 
 addons:
   mysql: '5.6'
