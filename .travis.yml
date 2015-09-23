@@ -1,13 +1,12 @@
-language: ruby
+language: php
 sudo: false
+
+php:
+  - hhvm
+
 
 install:
   - true
 
 script:
   - true
-
-notifications:
-  email:
-    recipients:
-      - "foo@example.com"
