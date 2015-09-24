@@ -8,7 +8,7 @@ php:
 
 matrix:
   allow_failures:
-    - hhvm_nightly
+    - php: hhvm_nightly
 
 install:
   - true
