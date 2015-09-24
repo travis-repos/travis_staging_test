@@ -6,6 +6,9 @@ php:
   - hhvm_nightly
   - 5.6
 
+matrix:
+  allow_failures:
+    - hhvm_nightly
 
 install:
   - true
