@@ -1,8 +1,8 @@
-language: python
+language: objective-c
 
 sudo: false
 
-cache: pip
+osx_image: xcode7
 
 install:
   - true
