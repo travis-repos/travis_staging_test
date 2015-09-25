@@ -1,16 +1,12 @@
-language: ruby
+language: perl
 
 sudo: false
 
-addons:
-  apt:
-    sources:
-      - elasticsearch-1.7
-    packages:
-      - elasticsearch
+perl:
+  - 5.22
 
 install:
   - true
 script:
-  - cat ~/apt-get-update.log
+  - true
   
