@@ -2,8 +2,7 @@ language: perl
 
 sudo: false
 
-perl:
-  - 5.22
+perl: 5.22
 
 install:
   - true
