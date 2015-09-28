@@ -254,9 +254,6 @@ class DummyPyTest(test):
         raise RuntimeError(setup_requires_error)
 
 
-with open(os.path.join(base_dir, "README.rst")) as f:
-    long_description = f.read()
-
 
 setup(
 )
