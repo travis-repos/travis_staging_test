@@ -1,12 +1,12 @@
-language: elixir
+language: python
 
-elixir:
-  - 1.1.0
+env:
+  - TOXENV=py35
 
 sudo: false
 
 install:
-  - true
+  - pip install tox
 script:
-  - true
-  
+  - tox
+
