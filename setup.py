@@ -25,8 +25,6 @@ src_dir = os.path.join(base_dir, "src")
 sys.path.insert(0, src_dir)
 
 about = {}
-with open(os.path.join(src_dir, "cryptography", "__about__.py")) as f:
-    exec(f.read(), about)
 
 
 VECTORS_DEPENDENCY = "cryptography_vectors=={0}".format(about['__version__'])
@@ -262,54 +260,4 @@ with open(os.path.join(base_dir, "README.rst")) as f:
 
 
 setup(
-    name=about["__title__"],
-    version=about["__version__"],
-
-    description=about["__summary__"],
-    long_description=long_description,
-    license=about["__license__"],
-    url=about["__uri__"],
-
-    author=about["__author__"],
-    author_email=about["__email__"],
-
-    classifiers=[
-        "Intended Audience :: Developers",
-        "License :: OSI Approved :: Apache Software License",
-        "License :: OSI Approved :: BSD License",
-        "Natural Language :: English",
-        "Operating System :: MacOS :: MacOS X",
-        "Operating System :: POSIX",
-        "Operating System :: POSIX :: BSD",
-        "Operating System :: POSIX :: Linux",
-        "Operating System :: Microsoft :: Windows",
-        "Programming Language :: Python",
-        "Programming Language :: Python :: 2",
-        "Programming Language :: Python :: 2.6",
-        "Programming Language :: Python :: 2.7",
-        "Programming Language :: Python :: 3",
-        "Programming Language :: Python :: 3.3",
-        "Programming Language :: Python :: 3.4",
-        "Programming Language :: Python :: 3.5",
-        "Programming Language :: Python :: Implementation :: CPython",
-        "Programming Language :: Python :: Implementation :: PyPy",
-        "Topic :: Security :: Cryptography",
-    ],
-
-    package_dir={"": "src"},
-    packages=find_packages(
-        where="src", exclude=["_cffi_src", "_cffi_src.*", "tests", "tests.*"]
-    ),
-    include_package_data=True,
-
-    install_requires=requirements,
-    tests_require=test_requirements,
-
-    # for cffi
-    zip_safe=False,
-    ext_package="cryptography.hazmat.bindings",
-    entry_points={
-        "cryptography.backends": backends,
-    },
-    **keywords_with_side_effects(sys.argv)
 )
