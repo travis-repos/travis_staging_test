@@ -1,18 +1,14 @@
-language: python
+language: elixir
 
-env:
-  - TOXENV=py34
+elixir:
+  - 1.1.0
 
-matrix:
-  include:
-    - env:
-      - TOXENV=py35
-      python: 3.5
+otp_releases:
+  - 18.0
 
 sudo: false
 
 install:
-  - pip install tox
+  - true
 script:
-  - tox
-
+  - true
