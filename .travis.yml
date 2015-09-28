@@ -1,9 +1,9 @@
-language: python
+language: elixir
+
+elixir:
+  - 1.1.0
 
 sudo: false
-
-cache:
-  pip: true
 
 install:
   - true
