@@ -1,14 +1,13 @@
-language: elixir
-
-elixir:
-  - 1.1.0
-
-otp_release:
-  - 18.0
+language: php
 
 sudo: false
 
-install:
-  - true
+php:
+  - 7
+  - nightly
+  - 7.0.0RC3
+
+install: true
+
 script:
   - true
