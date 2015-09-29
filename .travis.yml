@@ -7,7 +7,7 @@ php:
   - nightly
   - 7.0.0RC3
 
-install: true
+install: sleep 30
 
 script:
   - true
