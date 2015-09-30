@@ -4,10 +4,12 @@ sudo: false
 
 php:
   - 7
-  - nightly
-  - 7.0.0RC3
 
-install: sleep 30
+install: true
 
 script:
-  - true
+  - pecl help
+
+notifications:
+  email: false
+  slack: '<account>:<token>#development'
