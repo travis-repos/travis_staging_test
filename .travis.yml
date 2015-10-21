@@ -2,13 +2,10 @@ language: php
 
 sudo: false
 
-php:
-  - 7
-
 install: true
 
 script:
-  - pecl help
+  - true
 
 notifications:
   email: false
