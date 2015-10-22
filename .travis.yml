@@ -11,6 +11,7 @@ notifications:
   email: false
   irc:
     channels:
-      - secure: "G+WNYQPSw9hhNKGpyqAUgKIn6tytp6CZ97o9fTqqatA1gBUyn/sCvSJ9nggsCx+ywtuaX97Y/W8dyh63PD5MuwpjBOccW3umUDJDleSJNtK3rckeu/41CYfWpF3quaqGpEhZRmGLiW78b+dCR3wbZNIqkJgNEJYpDhVmyWR2IdA="
-    nick: guest38470138471304
+      - 'chat.freenode.org#travisstaging'
+    nick:
+      secure: "SkaV3znBxs865m9FH/k2N9akFu63HkyUZ0mZzwaq7bv0qjhZZxIyDGD2AkbifLT7AwBUeCFJWtBbWwJLk4/V1FkiTq1PHpM8pMkuP9QM5kiaueH2fXXdKmlPv1qgii+3r0tQ60mQsloZmj2VveYpG7e2usgGg+zy31bk54Ps2WQ="
 
