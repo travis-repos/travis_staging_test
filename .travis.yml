@@ -13,5 +13,5 @@ notifications:
     channels:
       - 'chat.freenode.org#travisstaging'
     nick:
-      secure: "aTaCuS8JW66jDsnIKPDJ4Ov++0cyMpU31R8NokOiTVkoz8cP834XzPF/6j3jKtCqcQpI7xWdUbXjEAnpBOEI5es49h6YOW7QMNWmXaPm6h2AJLxHgJpyIbotsYFTAjkMcQ/J1yk+6G/yu8vYLzoY1UaDrjRsblZWwnrykKDYlPg="
+      secure: "VMlbfgKbNyEeK6vQPn34k0pDW0X3IGfOscYxukx49sb2x1dT9GYcfWBtyvtxIMIYPNZ5goYqFm3WrI/ZjmGSdAMKJDcxI2NIW1Ggi6EE4T4eabhRsJT5Ra498kXSTvysz286QFg+JZDyNbIXE9Ya5p1X7lBAwXTerSEdQaiaOn8="
 
