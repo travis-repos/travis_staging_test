@@ -12,5 +12,6 @@ notifications:
   irc:
     channels:
       - 'chat.freenode.org#travisstaging'
-    nick: guest38470138471304
+    nick:
+      secure: "aTaCuS8JW66jDsnIKPDJ4Ov++0cyMpU31R8NokOiTVkoz8cP834XzPF/6j3jKtCqcQpI7xWdUbXjEAnpBOEI5es49h6YOW7QMNWmXaPm6h2AJLxHgJpyIbotsYFTAjkMcQ/J1yk+6G/yu8vYLzoY1UaDrjRsblZWwnrykKDYlPg="
 
