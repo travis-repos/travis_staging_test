@@ -12,5 +12,5 @@ notifications:
   irc:
     channels:
       - 'chat.freenode.org#travisstaging'
-    nick: foobar
+    nick: guest38470138471304
 
