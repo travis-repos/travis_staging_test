@@ -13,5 +13,4 @@ notifications:
     channels:
       - 'chat.freenode.org#travisstaging'
     nick: foobar
-    password: foobar
-  
+
