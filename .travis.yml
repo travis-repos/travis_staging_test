@@ -9,3 +9,4 @@ script:
 
 cache:
   bundler: true
+  feature: true
