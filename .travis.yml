@@ -1,4 +1,4 @@
-language: php
+language: ruby
 
 sudo: false
 
@@ -7,11 +7,5 @@ install: true
 script:
   - true
 
-notifications:
-  email: false
-  irc:
-    channels:
-      - 'chat.freenode.org#travisstaging'
-    nick:
-      secure: "SkaV3znBxs865m9FH/k2N9akFu63HkyUZ0mZzwaq7bv0qjhZZxIyDGD2AkbifLT7AwBUeCFJWtBbWwJLk4/V1FkiTq1PHpM8pMkuP9QM5kiaueH2fXXdKmlPv1qgii+3r0tQ60mQsloZmj2VveYpG7e2usgGg+zy31bk54Ps2WQ="
-
+cache:
+  bundler: true
