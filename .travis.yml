@@ -1,4 +1,6 @@
-language: ruby
+language: php
+
+php: 7
 
 sudo: false
 
@@ -7,6 +9,3 @@ install: true
 script:
   - true
 
-cache:
-  bundler: true
-  feature: true
