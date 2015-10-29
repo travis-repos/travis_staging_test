@@ -1,6 +1,6 @@
-language: erlang
+language: python
 
-otp_release: 18.1
+python: 3.5.0
 
 sudo: false
 
