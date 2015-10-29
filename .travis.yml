@@ -1,6 +1,6 @@
-language: php
+language: python
 
-php: 7
+python: '3.5.0'
 
 sudo: false
 
