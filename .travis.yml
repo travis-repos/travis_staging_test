@@ -1,6 +1,7 @@
-language: python
+language: perl
 
-python: 3.5.0
+perl:
+  - 5.22.0
 
 sudo: false
 
