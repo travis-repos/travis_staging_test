@@ -1,9 +1,7 @@
-language: php
+language: python
 
-php:
-  - 7.0.0RC6
-  - nightly
-  - 7
+python:
+  - 3.5.0
 
 sudo: false
 
