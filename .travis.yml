@@ -1,7 +1,9 @@
-language: erlang
+language: php
 
-otp_release:
-  - 18.1
+php:
+  - 7.0.0RC6
+  - nightly
+  - 7
 
 sudo: false
 
