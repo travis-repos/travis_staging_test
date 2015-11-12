@@ -1,7 +1,7 @@
-language: perl
+language: erlang
 
-perl:
-  - 5.22.0
+otp_release:
+  - 18.1
 
 sudo: false
 
