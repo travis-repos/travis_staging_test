@@ -11,4 +11,5 @@ script:
   - echo $PATH
   - which cpanm
   - cat `which cpan`
+  - find $HOME/perl5 -name strict.pm
 
