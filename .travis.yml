@@ -1,7 +1,7 @@
-language: php
+language: perl
 
-php:
-  - nightly
+perl:
+  - 5.22
 
 sudo: false
 
