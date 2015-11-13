@@ -8,5 +8,7 @@ sudo: false
 install: true
 
 script:
-  - true
+  - echo $PATH
+  - which cpanm
+  - cat `which cpan`
 
