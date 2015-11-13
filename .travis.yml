@@ -1,15 +1,12 @@
 language: perl
 
 perl:
-  - 5.22
+  - 5.22-extras
 
 sudo: false
 
 install: true
 
 script:
-  - echo $PATH
-  - which cpanm
-  - cat `which cpan`
-  - find $HOME/perl5 -name strict.pm
+  - true
 
