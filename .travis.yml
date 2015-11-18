@@ -1,7 +1,7 @@
 language: perl
 
 perl:
-  - 5.22-extras
+  - 5.22
 
 sudo: false
 
@@ -10,7 +10,9 @@ install: true
 script:
   - perl -V
 
-addons:
-  sauce_connect:
-    username: "Your Sauce Labs username"
-    access_key: "Your Sauce Labs access key"
+notifications:
+  email:
+    recipients:
+      - asari.ruby@gmail.com
+    on_success: always
+    on_failure: always
