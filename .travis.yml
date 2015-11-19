@@ -1,18 +1,11 @@
-language: perl
+language: php
 
-perl:
-  - 5.22
+php:
+  - '7'
 
 sudo: false
 
 install: true
 
 script:
-  - perl -V
-
-notifications:
-  email:
-    recipients:
-      - asari.ruby@gmail.com
-    on_success: always
-    on_failure: always
+  - true
