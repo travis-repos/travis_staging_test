@@ -6,7 +6,7 @@ php:
 sudo: false
 
 addons:
-  firefox: latest-esr
+  firefox: latest-beta
 
 install: true
 
