@@ -6,7 +6,7 @@ php:
 sudo: false
 
 addons:
-  firefox: latest
+  firefox: 39.0.3
 
 install: true
 
