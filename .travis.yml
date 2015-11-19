@@ -6,9 +6,9 @@ php:
 sudo: false
 
 addons:
-  firefox: latest
+  firefox: latest-esr
 
 install: true
 
 script:
-  - true
+  - firefox --version
