@@ -5,6 +5,9 @@ php:
 
 sudo: false
 
+addons:
+  firefox: latest
+
 install: true
 
 script:
