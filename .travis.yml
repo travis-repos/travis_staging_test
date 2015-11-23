@@ -1,14 +1,11 @@
-language: php
-
-php:
-  - '7'
+language: ruby
 
 sudo: false
 
 addons:
-  firefox: 39.0.3
+  mariadb: '10.0'
 
 install: true
 
 script:
-  - firefox --version
+  - true
