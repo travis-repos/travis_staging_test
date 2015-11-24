@@ -2,10 +2,7 @@ language: ruby
 
 sudo: false
 
-addons:
-  mariadb: '10.0'
-
 install: true
 
 script:
-  - true
+  - false
