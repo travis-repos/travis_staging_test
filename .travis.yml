@@ -8,7 +8,7 @@ node_js:
 install: true
 
 script:
-  - true
+  - gcc -v
 
 env:
   - CXX=g++-4.8
