@@ -9,6 +9,7 @@ install: true
 
 script:
   - gcc -v
+  - g++ -v
 
 env:
   - CXX=g++-4.8
