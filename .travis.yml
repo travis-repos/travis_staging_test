@@ -8,15 +8,13 @@ node_js:
 install: true
 
 script:
-  - gcc -v
-  - g++ -v
-  - g++-4.8 -v
+  - true
 
 env:
-  - CXX=g++-4.8
+  - CXX=g++-4.9
 addons:
   apt:
     sources:
       - ubuntu-toolchain-r-test
     packages:
-      - g++-4.8
+      - g++-4.9
