@@ -1,6 +1,9 @@
-language: ruby
+language: node_js
 
 sudo: false
+
+node_js:
+  - '4.2'
 
 install: true
 
