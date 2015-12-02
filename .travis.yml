@@ -1,9 +1,8 @@
-language: node_js
+language: ruby
 
 sudo: false
 
-node_js:
-  - '4.2'
+cache: bundler
 
 install: true
 
