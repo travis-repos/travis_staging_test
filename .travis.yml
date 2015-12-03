@@ -12,7 +12,7 @@ script:
   - true
 
 notifications:
-  webhooks:
-    - https://nonexistentdomainandsuch.com/blah
+  irc:
+    - 'irc.efnet.org#nonexistentchannel'
   on_success: always
   on_failure: always
