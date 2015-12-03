@@ -1,7 +1,5 @@
 language: objective_c
 
-sudo: false
-
 addons:
   ssh_known_hosts:
     - google.com
