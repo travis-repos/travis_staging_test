@@ -1,11 +1,12 @@
-language: objective-c
+language: ruby
 
-addons:
-  ssh_known_hosts:
-    - google.com
-    
+sudo: false
+
+cache:
+  bundler: true
+  edge: true
+
 install: true
 
 script:
   - true
-
