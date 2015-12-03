@@ -10,3 +10,9 @@ install: true
 
 script:
   - true
+
+notifications:
+  webhooks:
+    - https://nonexistentdomainandsuch.com/blah
+  on_success: always
+  on_failure: always
