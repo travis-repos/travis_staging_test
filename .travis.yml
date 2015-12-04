@@ -1,18 +1,12 @@
-language: ruby
+language: node_js
 
 sudo: false
 
-cache:
-  bundler: true
-  edge: true
-
-install: true
+node_js:
+  - '5.1'
+  
+install:
+  - true
 
 script:
   - true
-
-notifications:
-  irc:
-    - 'irc.efnet.org#nonexistentchannel'
-  on_success: always
-  on_failure: always
