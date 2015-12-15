@@ -1,15 +1,18 @@
-language: php
-
-php:
-  - 7
-  - 7.0
-  - 7.0.0
-  - 7.0snapshot
+language: python
 
 sudo: false
 
+addons:
+  apt:
+    packages:
+    - python-argparse
+    - python-lxml
+    - python-mysqldb
+    - python-redis
+    - python-tz
+    - python-zmq
 install:
   - true
-
 script:
   - true
+  
