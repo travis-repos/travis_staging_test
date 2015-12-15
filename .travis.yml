@@ -1,18 +1,18 @@
-language: python
+language: ruby
 
 sudo: false
 
-addons:
-  apt:
-    packages:
-    - python-argparse
-    - python-lxml
-    - python-mysqldb
-    - python-redis
-    - python-tz
-    - python-zmq
 install:
   - true
 script:
   - true
   
+after_success:
+  - echo "YAY!"
+
+addons:
+  artifacts:
+    paths:
+    - foo
+    target_paths:
+    - foo
