@@ -1,14 +1,16 @@
-language: php
+language: ruby
 
-php:
-  - '7.0'
-  - '5.5'
-  - hhvm
+rvm:
+  - '2.1.5'
 
-sudo: required
-dist: precise
+sudo: false
 
 install:
   - true
 script:
   - true
+
+addons:
+  sauce_connect:
+    username: "Your Sauce Labs username"
+    access_key: "Your Sauce Labs access key"
