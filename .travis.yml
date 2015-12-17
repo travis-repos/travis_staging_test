@@ -8,4 +8,6 @@ sudo: false
 install:
   - true
 script:
-  - travis_wait 5 sleep 600
+  - hostname -f
+  - hostname -f | wc -c
+  
