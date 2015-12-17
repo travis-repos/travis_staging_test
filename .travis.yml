@@ -8,9 +8,4 @@ sudo: false
 install:
   - true
 script:
-  - true
-
-addons:
-  sauce_connect:
-    username: "Your Sauce Labs username"
-    access_key: "Your Sauce Labs access key"
+  - travis_wait 5 sleep 600
