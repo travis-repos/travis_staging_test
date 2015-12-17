@@ -3,7 +3,8 @@ language: ruby
 rvm:
   - '2.1.5'
 
-sudo: false
+sudo: required
+dist: precise
 
 install:
   - true
