@@ -4,7 +4,7 @@ php:
   - hhvm
 
 sudo: required
-dist: trusty
+dist: precise
 
 install:
   - true
