@@ -1,16 +1,12 @@
 language: node_js
 
 node_js:
-  - 5.3
+  - 8
 
-sudo: required
-dist: trusty
+sudo: false
 
-before_install:
-  - sudo ifconfig -a
 install:
-  - echo '10.0.3.2 nodejs.org' | sudo tee -a /etc/hosts
-  - nvm install 4.3
+  - true
 script:
   - true
   
