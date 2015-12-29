@@ -4,8 +4,11 @@ node_js:
   - 5.3
   - 4.2
 
-sudo: false
+sudo: required
+dist: trusty
 
+before_install:
+  - sudo ifconfig -a
 install:
   - true
 script:
