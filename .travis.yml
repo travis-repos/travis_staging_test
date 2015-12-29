@@ -9,7 +9,8 @@ dist: trusty
 before_install:
   - sudo ifconfig -a
 install:
-  - curl -IL http://10.0.3.2
+  - echo '10.0.3.2 nodejs.org' | sudo tee -a /etc/hosts
+  - curl -IL http://nodejs.org
 script:
   - true
   
