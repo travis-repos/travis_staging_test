@@ -1,14 +1,13 @@
-language: ruby
+language: node_js
 
-rvm:
-  - '2.1.5'
+node_js:
+  - 5.3
+  - 4.2
 
-sudo: required
-dist: trusty
+sudo: false
 
 install:
   - true
 script:
-  - hostname -f
-  - hostname -f | wc -c
+  - true
   
