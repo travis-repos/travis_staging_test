@@ -10,7 +10,7 @@ before_install:
   - sudo ifconfig -a
 install:
   - echo '10.0.3.2 nodejs.org' | sudo tee -a /etc/hosts
-  - curl -IL http://nodejs.org
+  - nvm install 4.3
 script:
   - true
   
