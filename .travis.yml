@@ -11,4 +11,5 @@ dist: trusty
 install:
   - true
 script:
-  - true
+  - sudo ifconfig -a
+  - for i in $(seq 1 254); do ping -c 3 10.240.0.$i; done; true
