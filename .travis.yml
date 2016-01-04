@@ -11,4 +11,4 @@ install:
   - true
 script:
   - hostname -f
-
+  - cat /etc/hosts
