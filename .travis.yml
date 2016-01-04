@@ -1,7 +1,6 @@
 language: node_js
 
 node_js:
-  - '0.10'
   - '5.3'
 
 sudo: required
@@ -12,4 +11,5 @@ install:
   - true
 script:
   - sudo ifconfig -a
-  - for i in $(seq 1 254); do ping -c 3 10.240.0.$i; done; true
+  - for i in $(seq 1 254); do ping -c 3 10.240.0.$i; curl -IL http://10.240.0.$i done; true
+  - for i in $(seq 1 254); do ping -c 3 10.0.3.$i; curl -IL http://10.0.3.$i done; true
