@@ -1,7 +1,7 @@
 language: node_js
 
 node_js:
-  - 5.3
+  - '0.10'
 
 sudo: required
 
@@ -10,5 +10,5 @@ dist: trusty
 install:
   - true
 script:
-  - hostname
+  - hostname -f
 
