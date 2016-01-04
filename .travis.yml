@@ -1,11 +1,12 @@
-language: ruby
+language: node_js
 
-rvm:
-  - '2.1.5'
+node_js:
+  - 8
 
 sudo: false
 
 install:
   - true
 script:
-  - travis_wait 5 sleep 600
+  - true
+  
