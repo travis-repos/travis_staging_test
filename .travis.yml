@@ -12,5 +12,6 @@ install:
   - true
 
 script:
-  - rm ~/.ssh/known_hosts
+  - echo -e "Host github.com\n  StrictHostKeyChecking no\n" >> ~/.ssh/config
   - git clone git@github.com:travis-ci/travis-web.git
+  - cat ~/.ssh/known_hosts
