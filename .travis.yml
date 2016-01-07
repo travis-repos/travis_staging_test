@@ -1,13 +1,16 @@
-language: node_js
+language: objective-c
+rvm:
+  - 2.1.5
 
-node_js:
-  - '5.3'
-
-sudo: required
-
-dist: trusty
+before_install:
+  - ls -l ~/.ssh
+  - cat /etc/ssh_config || true
+  - cat ~/.ssh/known_hosts || true
+  - cat ~/.ssh/config || true
 
 install:
   - true
+
 script:
-  - true
+  - rm ~/.ssh/known_hosts
+  - git clone git@github.com:travis-ci/travis-web.git
