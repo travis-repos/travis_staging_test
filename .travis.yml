@@ -1,6 +1,7 @@
 language: ruby
 
 sudo: required
+dist: trusty
 
 addons:
   postgresql: '9.5'
@@ -13,4 +14,4 @@ install:
 
 script:
   - postgres --version
-  - sudo diff /etc/postgresql/9.{4,5}/main/pg_hba.conf
+  - sudo diff /etc/postgresql/9.{4,5}/main/pg_hba.conf || true
