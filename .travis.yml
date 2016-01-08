@@ -13,3 +13,4 @@ install:
 
 script:
   - postgres --version
+  - env COLUMNS=132 dpkg -l | grep postgres
