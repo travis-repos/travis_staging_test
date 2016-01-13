@@ -1,11 +1,11 @@
-language: erlang
+language: ruby
 
-otp_release:
-  - 18.2
+notifications:
+  email: false
 
-sudo: required
+sudo: false
 
-dist: trusty
+cache: bundler
 
 install:
   - true
