@@ -1,6 +1,10 @@
-language: objective-c
+language: ruby
 
-sudo: false
+sudo: required
+dist: trusty
+
+rvm:
+  - '2.1.5'
 
 install:
   - true
