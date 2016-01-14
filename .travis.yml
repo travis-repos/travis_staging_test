@@ -1,7 +1,6 @@
 language: ruby
 
-sudo: required
-dist: trusty
+sudo: false
 
 rvm:
   - '2.1.5'
@@ -11,3 +10,12 @@ install:
 
 script:
   - cat ~/.ssh/config
+
+matrix:
+  include:
+#    - php: 5.4
+#      env: DB=mysql
+#    - php: 5.4
+#      env: DB=pgsql
+#    - php: 5.4
+#      env: DB=oracle
