@@ -9,13 +9,4 @@ install:
   - true
 
 script:
-  - cat ~/.ssh/config
-
-matrix:
-  include:
-#    - php: 5.4
-#      env: DB=mysql
-#    - php: 5.4
-#      env: DB=pgsql
-#    - php: 5.4
-#      env: DB=oracle
+  - travis_wait 1 sleep 30
