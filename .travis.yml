@@ -3,11 +3,10 @@ language: ruby
 sudo: false
 
 rvm:
-  - '2.1.5'
+  - '2.3'
 
 install:
   - true
 
 script:
-  - travis_wait 1 sleep 30
-  - head -112 ~/build.sh | tail -1
+  - true
