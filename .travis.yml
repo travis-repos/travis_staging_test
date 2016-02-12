@@ -1,4 +1,4 @@
-language: objective-c
+language: ruby
 
 rvm: '2.1.3'
 
