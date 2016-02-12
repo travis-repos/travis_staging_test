@@ -9,7 +9,8 @@ env:
   - FOO=var
 
 cache:
-  - packages
+  directories: $HOME/foobar
+  packages: true
 
 install:
   - true
