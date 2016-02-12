@@ -1,5 +1,5 @@
 
-language: c
+language: ruby
 
 sudo: false
 
@@ -9,7 +9,7 @@ notifications:
 env:
   - FOO=var
 
-cache: ccache
+cache: bundler
 
 script:
   - true
