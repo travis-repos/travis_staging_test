@@ -1,6 +1,4 @@
-language: ruby
-
-rvm: '2.1.3'
+language: python
 
 sudo: false
 
@@ -11,8 +9,7 @@ env:
   - FOO=var
 
 cache:
-  - bundler
-  - cocoapods
+  - pip
 
 install:
   - true
