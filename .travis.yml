@@ -8,12 +8,10 @@ notifications:
 env:
   - FOO=var
 
-addons:
-  ssh_known_hosts:
-    - bitbucket.org
+cache: bundler
 
 install:
   - true
 
 script:
-  - echo $TRAVIS_OS_NAME
+  - true
