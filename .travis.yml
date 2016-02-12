@@ -1,4 +1,4 @@
-language: python
+language: c
 
 sudo: false
 
@@ -9,7 +9,7 @@ env:
   - FOO=var
 
 cache:
-  - pip
+  - ccache
 
 install:
   - true
