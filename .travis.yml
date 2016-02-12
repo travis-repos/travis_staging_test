@@ -1,6 +1,7 @@
-language: R
 
-sudo: false
+language: objective-c
+
+rvm: '2.1.3'
 
 notifications:
   email: false
@@ -8,9 +9,7 @@ notifications:
 env:
   - FOO=var
 
-cache:
-  directories: $HOME/foobar
-  packages: true
+cache: bundler
 
 install:
   - true
