@@ -8,7 +8,9 @@ notifications:
 env:
   - FOO=var
 
-cache: bundler
+cache:
+  - bundler
+  - cocoapods
 
 install:
   - true
