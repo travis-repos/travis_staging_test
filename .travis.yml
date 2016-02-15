@@ -1,17 +1,16 @@
+language: erlang
 
-language: python
-
-sudo: false
+sudo: required
+dist: trusty
 
 notifications:
   email: false
 
-env:
-  - FOO=var
+otp_release:
+  - '18.1'
 
-cache:
-  directories:
-    - $HOME/foo
+install:
+  - true
 
 script:
   - true
