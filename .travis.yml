@@ -1,16 +1,22 @@
-language: ruby
-
 sudo: required
-dist: trusty
 
-rvm:
-  - '2.2.2'
+services:
+  - docker
+
+before_install:
+  - gem install bundler
+  - docker login -e="$DOCKER_EMAIL" -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
+  - docker-compose build
+
+after_success:
+  - docker tag -f wordsmith_web "autoi/wordsmith:$TRAVIS_BUILD_NUMBER"
+  - docker push "autoi/wordsmith:$TRAVIS_BUILD_NUMBER"
+  - ruby ./script/ci/update_task_definitions.rb
+
+install: true
+
+script:
+  - docker-compose run -e "RAILS_ENV=test" web script/ci/run_tests
 
 notifications:
   email: false
-
-install:
-  - true
-
-script:
-  - true
