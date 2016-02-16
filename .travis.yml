@@ -1,13 +1,13 @@
-language: erlang
+language: ruby
 
 sudo: required
 dist: trusty
 
+rvm:
+  - '2.2.2'
+
 notifications:
   email: false
-
-otp_release:
-  - '18.1'
 
 install:
   - true
