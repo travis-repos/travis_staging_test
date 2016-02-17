@@ -1,22 +1,9 @@
-sudo: required
-
-services:
-  - docker
-
-before_install:
-  - gem install bundler
-  - docker login -e="$DOCKER_EMAIL" -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
-  - docker-compose build
-
-after_success:
-  - docker tag -f wordsmith_web "autoi/wordsmith:$TRAVIS_BUILD_NUMBER"
-  - docker push "autoi/wordsmith:$TRAVIS_BUILD_NUMBER"
-  - ruby ./script/ci/update_task_definitions.rb
+language: objective-c
 
 install: true
 
 script:
-  - docker-compose run -e "RAILS_ENV=test" web script/ci/run_tests
+  - cat ~/build.sh
 
 notifications:
   email: false
