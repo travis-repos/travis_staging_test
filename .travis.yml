@@ -11,4 +11,4 @@ rvm:
 install: true
 
 script:
-  - dpkg -l | grep glibc
+  - dpkg -l | grep libc6
