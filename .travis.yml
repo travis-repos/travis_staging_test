@@ -1,9 +1,7 @@
-language: objective-c
-
+sudo: required
+​
+services:
+  - docker
+​
 install: true
-
-script:
-  - cat ~/build.sh
-
-notifications:
-  email: false
+​
