@@ -1,4 +1,8 @@
-language: objective-c
+language: ruby
+
+sudo: false
+
+cache: bundler
 
 install: true
 
