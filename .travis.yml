@@ -2,10 +2,7 @@ language: ruby
 
 sudo: false
 
-cache:
-  directories:
-    - vendor/cache
-  edge: true
+cache: bundler
 
 script:
   - true
