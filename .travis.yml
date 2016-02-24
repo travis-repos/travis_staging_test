@@ -5,6 +5,7 @@ sudo: false
 cache:
   directories:
     - vendor/cache
+  edge: true
 
 script:
   - true
