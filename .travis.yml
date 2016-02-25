@@ -4,8 +4,21 @@ sudo: false
 
 addons:
   apt:
+    sources:
+      - debian-sid
     packages:
-      - foo
+      - cmake
+      - p7zip-full
+      - build-essential
+      - sshpass
+      - lua5.2
+      - lua-filesystem
+      - luasocket
+      - luarocks
+      - doxygen
+      - libsdl2-dev
+      - libsdl2-mixer-dev
+      - libfreetype6-dev
 
 script:
   - true
