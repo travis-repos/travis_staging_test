@@ -3,7 +3,7 @@ language: ruby
 sudo: false
 
 install:
-  - true
+  - false
 
 script:
   - true
