@@ -9,6 +9,9 @@ elixir: '1.2.3'
 otp_release: '18.2'
 
 
+addons:
+  mariadb: "10.1"
+  
 install:
   - true
 
