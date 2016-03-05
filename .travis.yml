@@ -1,13 +1,19 @@
-language: ruby
+language: elixir
 
-sudo: false
+sudo: required
+
+dist: trusty
+
+elixir: '1.2.3'
+
+otp_release: '18.2'
+
 
 install:
-  - false
+  - true
 
 script:
-  - true
+  - tue
 
 notifications:
   email: false
-
