@@ -1,18 +1,18 @@
-language: elixir
+language: ruby
 
-sudo: required
+rvm: default
 
-dist: trusty
+sudo: false
 
-elixir: '1.2.3'
+addons:
+  postgresql: "9.4"
+  apt:
+    packages:
+    - postgresql-plpython-9.4
 
-otp_release: '18.2'
+install: true
 
-install:
-  - true
-
-script:
-  - true
+script: true
 
 notifications:
   email: false
