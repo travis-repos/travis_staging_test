@@ -1,18 +1,10 @@
-language: ruby
-
-rvm: default
+language: node_js
 
 sudo: false
 
-addons:
-  postgresql: "9.4"
-  apt:
-    packages:
-    - postgresql-plpython-9.4
+install: curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.0/install.sh | bash
 
-install: true
-
-script: true
+script: nvm --version
 
 notifications:
   email: false
