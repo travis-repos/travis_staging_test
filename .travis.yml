@@ -1,20 +1,15 @@
 language: ruby
 
-rvm: default
+rvm: 2.2.4
 
-matrix:
-  include:
-    - sudo: required
-      dist: trusty
-    - sudo: required
-      dist: precise
-    - sudo: false
+sudo: required
+dist: trusty
 
 install:
   - true
 
 script:
-  - cat /etc/apt/sources.list
+  - gem list
 
 notifications:
   email: false
