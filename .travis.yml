@@ -1,15 +1,16 @@
 language: ruby
 
-rvm: 2.2.4
+rvm: default
 
-sudo: required
-dist: trusty
+sudo: false
+
+cache: bundler
 
 install:
   - true
 
 script:
-  - gem list
+  - true
 
 notifications:
   email: false
