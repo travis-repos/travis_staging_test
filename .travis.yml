@@ -6,13 +6,15 @@ sudo: required
 
 dist: trusty
 
-cache: bundler
+cache:
+  bundler: true
+  edge: true
 
 install:
   - true
 
 script:
-  - true
+  - ls -l ~
 
 notifications:
   email: false
