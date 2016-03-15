@@ -14,8 +14,7 @@ install:
   - true
 
 script:
-  - ls -l ~
-  - cat ~/build.sh
+  - cat ~/curl_headers
 
 notifications:
   email: false
