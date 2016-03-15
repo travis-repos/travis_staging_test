@@ -10,12 +10,8 @@ cache:
   bundler: true
   edge: true
 
-install:
-  - true
-
 script:
-  - cat ~/curl_headers
-  - cat ~/build.sh
+  - true
 
 notifications:
   email: false
