@@ -2,9 +2,7 @@ language: ruby
 
 rvm: default
 
-sudo: required
-
-dist: trusty
+sudo: false
 
 cache:
   bundler: true
