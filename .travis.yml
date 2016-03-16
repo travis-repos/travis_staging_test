@@ -10,7 +10,7 @@ cache:
   edge: true
 
 script:
-  - cat ~/build.sh
+  - true
 
 notifications:
   email: false
