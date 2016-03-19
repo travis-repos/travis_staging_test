@@ -12,5 +12,10 @@ cache:
 script:
   - cat ~/build.sh
 
+after_script:
+  - cat ~/.casher/md5sums_before
+  - cat ~/.casher/md5sums_after
+  - cat ~/.casher/checksum_diff
+
 notifications:
   email: false
