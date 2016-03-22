@@ -1,11 +1,10 @@
-language: ruby
+language: node_js
 
-rvm: default
+node_js:
+  - '5'
 
-sudo: false
-
-cache:
-  bundler: true
+install:
+  - true
 
 script:
   - true
