@@ -5,6 +5,8 @@ node_js:
 
 os: osx
 
+osx_image: xcode7.2
+
 install:
   - true
 
