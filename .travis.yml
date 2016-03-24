@@ -1,5 +1,9 @@
 language: php
 php:
   - hhvm
-sudo: required
-dist: trusty
+
+matrix:
+  include:
+    - sudo: required
+      dist: trusty
+    - sudo: false
