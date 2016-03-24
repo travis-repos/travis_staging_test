@@ -5,6 +5,7 @@ matrix:
   include:
     - sudo: required
       dist: trusty
+      group: edge
       php: hhvm
     - sudo: false
       php: hhvm
