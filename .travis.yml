@@ -8,3 +8,8 @@ matrix:
       php: hhvm
     - sudo: false
       php: hhvm
+
+notifications:
+  email: false
+
+script: true
