@@ -9,7 +9,7 @@ matrix:
       group: edge
       rvm: '2.3.0'
     - sudo: false
-    rvm: '2.3.0'
+      rvm: '2.3.0'
 
 notifications:
   email: false
