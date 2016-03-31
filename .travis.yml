@@ -1,14 +1,15 @@
-language: php
-php: hhvm
+language: ruby
+
+cache: bundler
 
 matrix:
   include:
     - sudo: required
       dist: trusty
       group: edge
-      php: hhvm
+      rvm: '2.3.0'
     - sudo: false
-      php: hhvm
+    rvm: '2.3.0'
 
 notifications:
   email: false
