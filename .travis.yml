@@ -14,9 +14,4 @@ notifications:
   email: false
 
 script:
-  - sleep 300
-  - sleep 300
-  - sleep 300
-  - sleep 300
-  - sleep 300
-  - sleep 300
+  - true
