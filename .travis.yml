@@ -4,7 +4,9 @@ sudo: required
 
 dist: precise
 
-cache: bundler
+cache:
+  bundler: true
+  edge: true
 
 rvm: default
 
