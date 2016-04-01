@@ -1,13 +1,18 @@
-language: node_js
+language: ruby
 
 sudo: false
 
-node_js:
-  - '5'
+cache: bundler
+
+rvm: default
 
 notifications:
   email: false
 
-install: true
-
-script: nvm --version
+script:
+  - sleep 300
+  - sleep 300
+  - sleep 300
+  - sleep 300
+  - sleep 300
+  - sleep 300
