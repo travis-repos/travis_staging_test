@@ -1,17 +1,11 @@
-language: ruby
+language: node_js
 
-cache: bundler
-
-matrix:
-  include:
-    - sudo: required
-      dist: trusty
-      group: edge
-      rvm: '2.3.0'
-    - sudo: false
-      rvm: '2.3.0'
+node_js:
+  - '5'
 
 notifications:
   email: false
 
-script: true
+install: true
+
+script: nvm --version
