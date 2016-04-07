@@ -1,4 +1,4 @@
-language: elxiir
+language: elixir
 
 sudo: required
 
