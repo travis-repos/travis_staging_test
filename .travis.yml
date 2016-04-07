@@ -1,17 +1,19 @@
-language: ruby
+language: elxiir
 
 sudo: required
 
-dist: precise
+dist: trusty
 
-cache:
-  bundler: true
-  edge: true
+elxiir:
+  - 1.2.4
 
-rvm: default
+otp_release:
+  - 18.2
 
 notifications:
   email: false
 
+install:
+  - true
 script:
   - true
