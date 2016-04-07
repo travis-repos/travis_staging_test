@@ -16,4 +16,4 @@ notifications:
 install:
   - true
 script:
-  - true
+  - grep -C 3 'kiex' ~/build.sh
