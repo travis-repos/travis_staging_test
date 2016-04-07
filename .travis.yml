@@ -17,3 +17,5 @@ install:
   - true
 script:
   - grep -C 3 'kiex' ~/build.sh
+  - test -s "$HOME/.kiex/scripts/kiex" && source "$HOME/.kiex/scripts/kiex"
+  - which kiex || true
