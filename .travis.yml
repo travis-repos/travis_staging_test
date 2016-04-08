@@ -7,6 +7,7 @@ php:
 
 env:
   - SLEEP=1
+  - SLEEP=30
   - SLEEP=360
 
 matrix:
@@ -26,4 +27,4 @@ notifications:
 install:
   - true
 script:
-  - sleep $SLEEP
+  - sleep $SLEEP; false
