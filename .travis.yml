@@ -3,12 +3,12 @@ language: php
 sudo: false
 
 php:
-  - '5.2'
   - '5.6'
-  - 'hhvm'
 
 notifications:
   email: false
+  slack:
+    secure: "lJvygEEwbvbTua6vhOQCgg/voA7iH9sgm6yj9pC9fnYBf++8DWbyyM3sUB3ZIBaeqUlwiEXmn5HjgQlzB1+JTHPtOJtd05m72kOOSEIcXqcLK3Of51E4fEzjrAZ4x/nJQeIIrUzpnlVrSpgFkCP1qNWq1AV+miSjoFFbTn2v7hA="
 
 install:
   - true
