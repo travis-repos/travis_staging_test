@@ -3,6 +3,8 @@ language: ruby
 matrix:
   include:
     - sudo: false
+    - sudo: required
+      dist: trusty
 
 cache: bundler
 
