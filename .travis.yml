@@ -1,16 +1,14 @@
 language: ruby
 
-matrix:
-  include:
-    - sudo: false
-    - sudo: required
-      dist: trusty
+sudo: false
 
-cache: bundler
+install: true
 
 script:
-  - true
+  - sleep 630
 
+after_failure:
+  - echo "FAILED!"
 notifications:
   email: false
 
