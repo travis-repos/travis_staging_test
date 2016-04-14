@@ -1,11 +1,10 @@
-language: java
+language: ruby
 
-jdk: oraclejdk8
+matrix:
+  include:
+    - sudo: false
 
-sudo: false
-
-addons:
-  mariadb: 10.1
+cache: bundler
 
 install: true
 script:
