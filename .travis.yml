@@ -1,14 +1,12 @@
-language: ruby
+language: scala
 
 sudo: false
 
 install: true
 
 script:
-  - sleep 630
+  - true
 
-after_failure:
-  - echo "FAILED!"
 notifications:
   email: false
 
