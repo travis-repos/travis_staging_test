@@ -5,7 +5,7 @@ sudo: false
 install: true
 
 script:
-  - true
+  - cat `which sbt`
 
 notifications:
   email: false
