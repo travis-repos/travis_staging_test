@@ -1,11 +1,13 @@
-language: scala
+language: node_js
+
+node_js: 4
 
 sudo: false
 
 install: true
 
 script:
-  - cat `which sbt`
+  - cat ~/build.sh
 
 notifications:
   email: false
