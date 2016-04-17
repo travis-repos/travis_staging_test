@@ -1,7 +1,6 @@
 language: node_js
 
-sudo: required
-dist: trusty
+os: osx
 
 node_js: 4
 
@@ -9,8 +8,7 @@ sudo: false
 
 install: true
 
-script:
-  - cat ~/build.sh
+script: true
 
 notifications:
   email: false
