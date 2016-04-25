@@ -6,6 +6,14 @@ sudo: false
 
 cache: bundler
 
+matrix:
+  include:
+    - os: osx
+    - sudo: required
+      dist: trusty
+    - sudo: required
+      dist: precise
+
 # install: true
 
 script: true
