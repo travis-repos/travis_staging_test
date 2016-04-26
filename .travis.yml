@@ -1,10 +1,12 @@
-language: ruby
+language: node_js
 
-rvm: default
-
+node_js:
+  - '4'
 sudo: false
 
-cache: bundler
+cache:
+  directories:
+    - node_modules
 
 matrix:
   include:
@@ -16,7 +18,11 @@ matrix:
 
 # install: true
 
-script: true
+script:
+  - cat ~/.bashrc    || true
+  - cat /etc/bashrc  || true
+  - cat ~/.profile   || true
+  - cat /etc/profile || true
 
 notifications:
   email: false
