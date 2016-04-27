@@ -18,7 +18,7 @@ matrix:
 install: true
 
 script:
-  - true
+  - firefox --version
 
 notifications:
   email: false
