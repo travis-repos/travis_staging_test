@@ -21,7 +21,7 @@ matrix:
 
 script:
   - cat ~/.rvm/scripts/rvm || true
-  - find ~/.rvm || true
+  - find ~/.rvm -maxdepth 1 || true
 
 before_cache:
   - echo $PATH
