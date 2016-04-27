@@ -1,28 +1,16 @@
-language: ruby
-
-rvm: default
+language: rust
 
 sudo: false
 
-addons:
-  firefox: 'latest'
-
-matrix:
-  include:
-    - os: osx
-    - os: osx
-      osx_image: xcode7.3
-    - sudo: required
-      dist: trusty
-    - sudo: required
-      dist: precise
+rust:
+  - stable
+  - beta
+  - nightly
 
 install: true
 
 script:
-  - which firefox
-  - firefox --version
-  - /usr/local/bin/firefox --version
+  - true
 
 notifications:
   email: false
