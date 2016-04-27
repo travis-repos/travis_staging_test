@@ -20,6 +20,7 @@ matrix:
 
 script:
   - cat ~/.rvm/scripts/rvm || true
+  - find ~/.rvm
 
 before_cache:
   - echo $PATH
