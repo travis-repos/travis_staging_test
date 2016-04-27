@@ -19,10 +19,7 @@ matrix:
 # install: true
 
 script:
-  - cat ~/.bashrc    || true
-  - cat /etc/bashrc  || true
-  - cat ~/.profile   || true
-  - cat /etc/profile || true
+  - cat ~/.rvm/scripts/rvm || true
 
 before_cache:
   - echo $PATH
