@@ -24,6 +24,9 @@ script:
   - cat ~/.profile   || true
   - cat /etc/profile || true
 
+before_cache:
+  - echo $PATH
+
 notifications:
   email: false
 
