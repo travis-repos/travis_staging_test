@@ -1,10 +1,28 @@
-language: generic
+language: ruby
+
+rvm: default
 
 sudo: false
 
+install:
+  - true
+
+script:
+  - cat ~/build.sh
+
+before_deploy:
+  - echo "before_deploy"
+deploy:
+  - provider: script
+    script: echo 'first'
+  - provider: script
+    script: echo 'second'
+
+after_deploy:
+  - echo "after_deploy"
+
 notifications:
   email: false
-
 
 # notifications:
 #   email: false
