@@ -3,8 +3,12 @@ language: ruby
 rvm:
   - default
 
-sudo: required
-dist: precise
+sudo: false
+
+matrix:
+  include:
+    - sudo: required
+      dist: precise
 
 addons:
   apt:
