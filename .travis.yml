@@ -1,19 +1,9 @@
-language: ruby
+language: node_js
 
-rvm:
-  - default
+nvm:
+  - '4.3'
 
 sudo: false
-
-matrix:
-  include:
-    - sudo: required
-      dist: precise
-
-addons:
-  apt:
-    packages:
-      - pv
 
 install: true
 
