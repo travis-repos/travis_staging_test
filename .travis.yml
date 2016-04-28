@@ -1,6 +1,6 @@
-language: ruby
+language: perl
 
-rvm: default
+perl: 5.24
 
 sudo: false
 
@@ -8,18 +8,7 @@ install:
   - true
 
 script:
-  - cat ~/build.sh
-
-before_deploy:
-  - echo "before_deploy"
-deploy:
-  - provider: script
-    script: echo 'first'
-  - provider: script
-    script: echo 'second'
-
-after_deploy:
-  - echo "after_deploy"
+  - true
 
 notifications:
   email: false
