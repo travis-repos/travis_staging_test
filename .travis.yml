@@ -1,13 +1,15 @@
-language: rust
+language: ruby
 
-sudo: false
+rvm:
+  - default
 
-rust:
-  - stable
-  - beta
-  - nightly
+sudo: required
+dist: precise
 
-cache: cargo
+addons:
+  apt:
+    packages:
+      - pv
 
 install: true
 
