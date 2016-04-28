@@ -1,15 +1,14 @@
 language: node_js
 
 node_js:
-  - '4.3'
+  - '0.10'
 
 sudo: false
 
 install: true
 
 script:
-  - nvm list
-  - nvm ls-remote
+  - true
 
 notifications:
   email: false
