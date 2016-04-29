@@ -7,8 +7,8 @@ perl:
 
 sudo: false
 
-install:
-  - true
+install: foo:
+  - true:fda
 
 script:
   - true
