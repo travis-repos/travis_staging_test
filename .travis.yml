@@ -1,7 +1,7 @@
-language: erlang
+language: python
 
-otp_release:
-  - '17.5'
+python:
+  - '3.5'
 
 matrix:
   include:
