@@ -1,6 +1,17 @@
-language: erlang
+language: php
 
 sudo: false
+
+matrix:
+  include:
+    - os: osx
+      env: RELEASE=mavericks
+    - sudo: required
+      dist: trusty
+      env: RELEASE=trusty
+    - sudo: required
+      dist: precise
+      env: RELEASE=precise
 
 install:
   - true
