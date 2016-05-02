@@ -1,6 +1,6 @@
 language: erlang
 
-os: osx
+sudo: false
 
 install:
   - true
