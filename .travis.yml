@@ -1,13 +1,9 @@
-language: perl
+language: erlang
 
-perl:
-  - '5.14'
-  - '5.14.2'
+os: osx
 
-sudo: false
-
-install: foo:
-  - true:fda
+install:
+  - true
 
 script:
   - true
