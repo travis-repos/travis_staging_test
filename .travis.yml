@@ -1,4 +1,7 @@
-language: elixir
+language: erlang
+
+otp_release:
+  - '17.5'
 
 matrix:
   include:
