@@ -1,37 +1,9 @@
-language: python
+language: perl
 
-python: '3.5'
+perl:
+  - '5.22'
 
-matrix:
-  include:
-    - sudo: required
-      dist: trusty
-      env: RELEASE=trusty
-      addons:
-        apt:
-          sources:
-            - sourceline: "deb http://packages.elastic.co/elasticsearch/2.2/debian stable main"
-              key_url: "https://packages.elastic.co/GPG-KEY-elasticsearch"
-          packages:
-            - elasticsearch
-    - sudo: required
-      dist: precise
-      env: RELEASE=precise
-      addons:
-        apt:
-          sources:
-            - sourceline: "deb http://packages.elastic.co/elasticsearch/2.2/debian stable main"
-              key_url: "https://packages.elastic.co/GPG-KEY-elasticsearch"
-          packages:
-            - elasticsearch
-    - sudo: false
-      addons:
-        apt:
-          sources:
-            - sourceline: "deb http://packages.elastic.co/elasticsearch/2.2/debian stable main"
-              key_url: "https://packages.elastic.co/GPG-KEY-elasticsearch"
-          packages:
-            - elasticsearch
+sudo: false
 
 
 install:
