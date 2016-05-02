@@ -9,10 +9,7 @@ matrix:
     - sudo: required
       dist: trusty
       env: RELEASE=trusty
-    - sudo: required
-      dist: precise
-      env: RELEASE=precise
-    - sudo: false
+
 
 install:
   - true
