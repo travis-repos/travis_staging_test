@@ -1,10 +1,8 @@
-language: perl
+language: ruby
 
-perl:
-  - '5.22'
+rvm: default
 
 sudo: false
-
 
 install:
   - true
@@ -14,6 +12,14 @@ script:
 
 notifications:
   email: false
+
+deploy:
+  provider: script
+  script: echo foo
+  edge:
+    branch: ha-opsworks-sdk-v2
+  on:
+    all_branches: true
 
 # notifications:
 #   email: false
