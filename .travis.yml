@@ -27,7 +27,7 @@ deploy:
       source: travis-ci/dpl
       branch: ha-opsworks-sdk-v2
     on:
-      all_branches: true
+      branch: default
 
 # notifications:
 #   email: false
