@@ -16,18 +16,9 @@ notifications:
 deploy:
   - provider: script
     script: echo foo
-    edge:
-      branch: ha-opsworks-sdk-v2
-    on:
-      branch: master
 
   - provider: script
     script: echo bar
-    edge:
-      source: travis-ci/dpl
-      branch: ha-opsworks-sdk-v2
-    on:
-      branch: master
 
 
 # notifications:
