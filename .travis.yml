@@ -1,24 +1,14 @@
 language: ruby
 
-rvm: default
+os: osx
 
-sudo: false
-
-install:
-  - true
+cache: bundler
 
 script:
   - true
 
 notifications:
   email: false
-
-deploy:
-  - provider: script
-    script: echo foo
-
-  - provider: script
-    script: echo bar
 
 
 # notifications:
