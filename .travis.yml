@@ -1,10 +1,11 @@
-language: ruby
+language: rust
 
-os: osx
+rust:
+  - 1.0.0
+  - stable
 
-osx_image: xcode7.3
-
-cache: bundler
+install:
+  - true
 
 script:
   - true
@@ -12,6 +13,11 @@ script:
 notifications:
   email: false
 
+deploy:
+  provider: script
+  script: echo deploy
+  on:
+    rust: stable
 
 # notifications:
 #   email: false
