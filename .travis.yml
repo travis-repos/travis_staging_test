@@ -1,23 +1,16 @@
-language: rust
+language: go
 
-rust:
-  - 1.0.0
-  - stable
-
-install:
-  - true
+go:
+  - '1.4'
+  - '1.5'
+  - '1.6'
+  - 'tip'
 
 script:
   - true
 
 notifications:
   email: false
-
-deploy:
-  provider: script
-  script: echo deploy
-  on:
-    rust: stable
 
 # notifications:
 #   email: false
