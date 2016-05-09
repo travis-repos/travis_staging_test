@@ -3,10 +3,9 @@ language: ruby
 sudo: false
 
 cache:
+  bundler: true
   directories:
-    bundler: true
-    directories:
-      - vendor/bundle
+    - vendor/bundle
 
 before_install:
   - cat ~/build.sh
