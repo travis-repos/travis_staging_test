@@ -7,6 +7,9 @@ cache:
   directories:
     - vendor/bundle
 
+env:
+  - secure: "gwGZG/kNYovmxcJN5selYqwi09+byePzmiuTjcK3UoD1VMwco5or5OhnGHuZU7kRlrwfHI6DOp3r6llTChg9WIens3Kgz4ISOKa/0FyXOkj96H3uJInN2gnYxJuIXDZoyEChRJPJlNhJ0DwEPWhaAygI3W5YO3Jsge1qaFrEFfY="
+
 script:
   - true
 
