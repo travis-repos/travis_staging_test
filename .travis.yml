@@ -7,7 +7,7 @@ dist: trusty
 addons:
   apt:
     packages:
-      - libgit2-dev
+      - swig
 
 cache:
   bundler: true
