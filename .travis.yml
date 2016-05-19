@@ -6,10 +6,15 @@ dist: trusty
 
 group: edge
 
-php:
-  - hhvm
-  - hhvm-3.12
-  - '5.6'
+matrix:
+  include:
+    - php: hhvm-3.12
+      env:
+        global:
+          # PHP 5
+          - hhvm.php7.all=0
+          # PHP 7
+          - hhvm.php7.all=1
 
 install:
   - true
@@ -19,8 +24,8 @@ script:
 
 notifications:
   email: false
-  slack:
-    rooms:
-      - secure: "lJvygEEwbvbTua6vhOQCgg/voA7iH9sgm6yj9pC9fnYBf++8DWbyyM3sUB3ZIBaeqUlwiEXmn5HjgQlzB1+JTHPtOJtd05m72kOOSEIcXqcLK3Of51E4fEzjrAZ4x/nJQeIIrUzpnlVrSpgFkCP1qNWq1AV+miSjoFFbTn2v7hA="
-    template:
-      - "Build <%{build_url}|#%{build_number}> (<%{compare_url}|%{commit}>) of %{repository}@%{branch} by %{author} %{result} in %{duration} (elapsed time: %{elapsed_time})"
+  # slack:
+  #   rooms:
+  #     - secure: "lJvygEEwbvbTua6vhOQCgg/voA7iH9sgm6yj9pC9fnYBf++8DWbyyM3sUB3ZIBaeqUlwiEXmn5HjgQlzB1+JTHPtOJtd05m72kOOSEIcXqcLK3Of51E4fEzjrAZ4x/nJQeIIrUzpnlVrSpgFkCP1qNWq1AV+miSjoFFbTn2v7hA="
+  #   template:
+  #     - "Build <%{build_url}|#%{build_number}> (<%{compare_url}|%{commit}>) of %{repository}@%{branch} by %{author} %{result} in %{duration} (elapsed time: %{elapsed_time})"
