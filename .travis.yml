@@ -11,9 +11,10 @@ matrix:
     - php: hhvm-3.12
       env:
         global:
-          # PHP 5
           - hhvm.php7.all=0
-          # PHP 7
+    - php: hhvm-3.12
+      env:
+        global:
           - hhvm.php7.all=1
 
 install:
