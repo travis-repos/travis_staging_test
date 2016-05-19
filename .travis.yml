@@ -1,19 +1,14 @@
 language: php
 
+php:
+  - hhvm-3.12
+  - hhvm-3.11
+
 sudo: required
 
 dist: trusty
 
 group: edge
-
-matrix:
-  include:
-    - php: hhvm-3.12
-      env:
-        - "hhvm.php7.all=0"
-    - php: hhvm-3.12
-      env:
-        - "hhvm.php7.all=1"
 
 install:
   - true
