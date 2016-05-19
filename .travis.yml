@@ -1,22 +1,16 @@
-language: ruby
+language: php
 
 sudo: required
 
 dist: trusty
 
-addons:
-  apt:
-    packages:
-      - swig
+php:
+  - hhvm
+  - hhvm-3.12
+  - '5.6'
 
-cache:
-  bundler: true
-  directories:
-    - vendor/bundle
-
-env:
-  - FOOBAR=
-  - secure: "gwGZG/kNYovmxcJN5selYqwi09+byePzmiuTjcK3UoD1VMwco5or5OhnGHuZU7kRlrwfHI6DOp3r6llTChg9WIens3Kgz4ISOKa/0FyXOkj96H3uJInN2gnYxJuIXDZoyEChRJPJlNhJ0DwEPWhaAygI3W5YO3Jsge1qaFrEFfY="
+install:
+  - true
 
 script:
   - true
