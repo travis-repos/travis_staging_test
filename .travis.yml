@@ -10,10 +10,10 @@ matrix:
   include:
     - php: hhvm-3.12
       env:
-        - 'hhvm.php7.all'=0
+        - "hhvm.php7.all"=0
     - php: hhvm-3.12
       env:
-        - 'hhvm.php7.all'=1
+        - "hhvm.php7.all"=1
 
 install:
   - true
