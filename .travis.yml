@@ -6,9 +6,7 @@ install:
   - true
 
 script:
-  - ulimit -n
-  - ulimit -n 50000
-  - ulimit -n
+  - truep
 
 notifications:
   email: false
