@@ -1,4 +1,6 @@
-language: php
+language: java
+
+jdk: openjdk7
 
 sudo: false
 
@@ -7,6 +9,9 @@ install:
 
 script:
   - true
+
+addons:
+  hostname: tooshort
 
 notifications:
   email: false
