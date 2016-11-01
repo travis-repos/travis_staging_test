@@ -1,12 +1,17 @@
-language: php
-
-sudo: false
-
-install:
-  - true
-
+matrix:
+  include:
+  - sudo: required
+    dist: trusty
+    env: QUEUE=gce DIST=trusty
+    os: linux
+    addons: { apt: { packages: [nmap] } }
+  - sudo: required
+    dist: precise
+    env: QUEUE=gce DIST=precise
+    os: linux
+    addons: { apt: { packages: [nmap] } }
 script:
-  - true
-
-notifications:
-  email: false
+  - ip addr
+  - IP=$(ip route get 8.8.8.8 | awk '/8.8.8.8/ {print $NF}')
+  - nmap -n -sP $IP/24  | tail -n 1 | tee nmap.log
+  - cat nmap.log | grep '(0 hosts up)'
