@@ -1,5 +1,9 @@
-language: ruby
+os: osx
+osx_image: xcode8.2
 
+cache:
+  bundler: true
+  
 sudo: false
 
 install:
