@@ -1,4 +1,4 @@
-language: ruby
+osx_image: xcode8.2
 
 sudo: false
 
