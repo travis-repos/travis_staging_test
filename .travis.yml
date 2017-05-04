@@ -6,7 +6,7 @@ install:
   - true
 
 script:
-  - true
+  - env
 
 notifications:
   email: false
